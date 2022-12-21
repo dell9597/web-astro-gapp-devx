@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://kit.fontawesome.com/f7f7b812cc.js" crossorigin="anonymous"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <style>
+        .poster {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 22%, rgba(8, 8, 8, 1) 62%, rgba(6, 6, 6, 1) 100%, rgba(140, 140, 140, 1) 100%, rgba(255, 255, 255, 1) 100%);
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="hero bg-[#171717] w-screen h-auto lg:h-[115vh] ">
+        <nav class="fixed top-0 left-0 right-0 backdrop-blur-md  bg-gray-500 opacity-80  ">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between ">
+                    <div class="flex space-x-7">
+                        <div>
+                            <!-- Website Logo -->
+                            <a href="index.html" class="flex items-center py-4 px-2 text-white">
+                                <img src="/src/components/img/logo.png" alt="" class="w-full h-10">
+
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Secondary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-3 ">
+                        <a href="showcase"
+                            class="py-2 px-2 font-medium text-white rounded hover:bg-[#4136F1] hover:text-white transition duration-300">Showcase</a>
+                        <a href=""
+                            class="py-2 px-2 font-medium text-white  rounded hover:bg-[#4136F1] transition duration-300">Docs</a>
+                        <a href=""
+                            class="py-2 px-2 font-medium text-white  rounded hover:bg-[#4136F1] transition duration-300">Blog</a>
+                        <a href=""
+                            class="py-2 px-2 font-medium text-white  rounded hover:bg-[#4136F1] transition duration-300">Alanatic</a>
+                        <a href=""
+                            class="py-2 px-2 font-medium text-white  rounded hover:bg-[#4136F1] transition duration-300">Template</a>
+                        <a href=""
+                            class="py-2 px-2 font-medium text-white  rounded hover:bg-[#4136F1] transition duration-300">Enterprise</a>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class=" w-6 h-6 text-white hover:text-white " x-show="!showMenu" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu bg-neutral-800 mr-4 md:mr-0">
+                <ul class="">
+                    <li class="active"><a href="index.html"
+                            class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition  duration-300 ">Showcase</a>
+                    </li>
+                    <li><a href="#services"
+                            class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition  duration-300">Docs</a>
+                    </li>
+                    <li><a href="#about"
+                            class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition  duration-300">Blog</a>
+                    </li>
+                    <li><a href="#contact"
+                            class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition  duration-300">Alanatic
+                            Us</a>
+                    </li>
+                    <li><a href="#contact"
+                            class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition  duration-300">Template</a>
+                    </li>
+                    <li><a href="#contact"
+                            class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition  duration-300">Enterprise</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <section class=" bg-[url('/src/components/img/black.webp')] bg-contain bg-no-repeat lg:bg-cover lg:h-full">
+            <div class="poster  ">
+                <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row pt-32 md:pt-60">
+                    <div class="left  ">
+                        <div class="w-[275px] h-[500px] mx-auto">
+                            <img src="/src/components/img/bpposter.webp" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="px-4 md:pt-24">
+                            <h2 class="text-lg text-white text-center">BLACK PANTHER: WAKANDA FOREVER</h2>
+                            <p class="text-white">In Marvel Studios’ Black Panther: Wakanda Forever, Queen Ramonda
+                                (Angela
+                                Bassett), Shuri (Letitia
+                                Wright), M’Baku (Winston Duke), Okoye (Danai Gurira) and the Dora Milaje (including
+                                Florence
+                                Kasumba), fight to protect their nation from intervening world powers in the wake of
+                                King
+                                T’Challa’s death. As the Wakandans strive to embrace their next chapter, the heroes must
+                                band
+                                together with the help of War Dog Nakia (Lupita Nyong’o) and Everett Ross (Martin
+                                Freeman)
+                                and
+                                forge a new path for the kingdom of Wakanda. Introducing Tenoch Huerta as Namor, king of
+                                a
+                                hidden undersea nation, the film also stars Dominique Thorne, Michaela Coel, Mabel
+                                Cadena
+                                and
+                                Alex Livanalli. Black Panther: Wakanda Forever, directed by Ryan Coogler and produced by
+                                Kevin
+                                Feige and Nate Moore.</p>
+                        </div>
+                        <div class="px-4 pt-4">
+                            <div class="lg:flex">
+                                <div class="md:w-[135px]">
+                                    <h1 class="text-white">RELEASE DATE</h1>
+                                </div>
+                                <p class="text-gray-500 pt-2">10/11/2022</p>
+                            </div>
+                            <div class="lg:flex">
+                                <div class="md:w-[135px]">
+                                    <h1 class="text-white">RUNNING TIME</h1>
+                                </div>
+                                <p class="text-gray-500 pt-2">161 mins</p>
+                            </div>
+                            <div class="lg:flex">
+                                <div class="md:w-[135px]">
+                                    <h1 class="text-white">DIRECTOR</h1>
+                                </div>
+                                <p class="text-gray-500 pt-2">Ryan Coogler</p>
+                            </div>
+                            <div class="lg:flex">
+                                <div>
+                                    <h1 class="text-white">CAST</h1>
+                                </div>
+                                <p class="text-gray-500 pt-2 lg:ml-24">Mabel Cadena, Michaela Coel, Winston Duke, Martin
+                                    Freeman,
+                                    Danai
+                                    Gurira, Tenoch Huerta, Alex Livanalli, Lupita Nyong’o, Dominique Thorne, Letitia
+                                    Wright
+                                </p>
+                            </div>
+                            <div class="lg:flex">
+                                <div class="md:w-[135px]">
+                                    <h1 class="text-white">CATEGORY</h1>
+                                </div>
+                                <ul class="flex  flex-wrap gap-2 pt-2">
+                                    <li class="text-white inline border rounded-md py-1 px-4">
+                                        <a href="#">CATEGORY</a>
+                                    </li>
+                                    <li class="text-white inline border rounded-md py-1 px-4">
+                                        <a href="#">CATEGORY</a>
+                                    </li>
+                                    <li class="text-white inline border rounded-md py-1 px-4">
+                                        <a href="#">CATEGORY</a>
+                                    </li>
+                                    <li class="text-white inline border rounded-md py-1 px-4">
+                                        <a href="#">CATEGORY</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="button sm:flex sm:my-4 lg:pt-4">
+                                <button class="block bg-red-700 rounded-3xl flex items-center justify-between py-3 px-6 text-white my-4 sm:my-0 sm:mr-4
+                                    ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                    </svg>
+
+                                    <p class="text-white ">Add To Witchinglist</p>
+                                </button>
+                                <button
+                                    class="block bg-sky-600 flex items-center justify-between rounded-3xl py-3 px-6 text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                                    </svg>
+
+                                    <a href="#" class="text-white">Shared</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+</body>
+
+</html>

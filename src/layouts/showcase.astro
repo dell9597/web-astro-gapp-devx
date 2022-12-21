@@ -1,0 +1,333 @@
+---
+import tailwind from "@astrojs/tailwind";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://kit.fontawesome.com/f7f7b812cc.js" crossorigin="anonymous"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
+    <title>Showcase</title>
+  </head>
+
+  <body>
+    <div class="hero bg-[#000000] w-screen h-auto bg-no-repeat bg-cover">
+      <nav
+        class="fixed top-0 left-0 right-0 backdrop-blur-md backdrop-brightness-200 bg-transparent"
+      >
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex justify-between">
+            <div class="flex space-x-7">
+              <div>
+                <!-- Website Logo -->
+                <a href="index.html" class="flex items-center py-4 px-2 text-white">
+                  <img src="/src/components/img/logo.png" alt="" class="w-full h-10" />
+                </a>
+              </div>
+            </div>
+            <!-- Secondary Navbar items -->
+            <div class="hidden md:flex items-center space-x-3">
+              <a
+                href="showcase"
+                class="py-2 px-2 font-medium text-white rounded hover:bg-[#4136F1] hover:text-white transition duration-300"
+                >Showcase</a
+              >
+              <a
+                href=""
+                class="py-2 px-2 font-medium text-white rounded hover:bg-[#4136F1] transition duration-300"
+                >Docs</a
+              >
+              <a
+                href=""
+                class="py-2 px-2 font-medium text-white rounded hover:bg-[#4136F1] transition duration-300"
+                >Blog</a
+              >
+              <a
+                href=""
+                class="py-2 px-2 font-medium text-white rounded hover:bg-[#4136F1] transition duration-300"
+                >Alanatic</a
+              >
+              <a
+                href=""
+                class="py-2 px-2 font-medium text-white rounded hover:bg-[#4136F1] transition duration-300"
+                >Template</a
+              >
+              <a
+                href=""
+                class="py-2 px-2 font-medium text-white rounded hover:bg-[#4136F1] transition duration-300"
+                >Enterprise</a
+              >
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+              <button class="outline-none mobile-menu-button">
+                <svg
+                  class="w-6 h-6 text-gray-500 hover:text-[#4136F1]"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu bg-neutral-800 mr-4 md:mr-0">
+          <ul class="">
+            <li class="active">
+              <a
+                href=""
+                class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition duration-300"
+                >Showcase</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition duration-300"
+                >Docs</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition duration-300"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition duration-300"
+                >Alanatic Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition duration-300"
+                >Template</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition duration-300"
+                >Enterprise</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <section class="story bg-[#171717] w-screen h-auto pt-32 pb-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-white text-3xl text-center md:text-4xl font-bold mb-6">
+          Showcase
+        </h2>
+        <p class="text-white text-center pr-4 sm:pr-0">
+          They decided to find the end of the rainbow.
+        </p>
+        <div class="cate mt-12 mx-auto pr-4 sm:pr-0">
+          <ul
+            class="text-center gap-y-2.5 grid grid-cols-2 items-center justify-center md:grid-cols-3 lg:grid-cols-8"
+          >
+            <li class="text-white py-2 px-6 rounded-lg hover:bg-[#4136F1]">
+              <a href="#">All</a>
+            </li>
+            <li class="text-white py-1 px-2 rounded-lg hover:bg-[#4136F1]">
+              <a href="#">CATEGORY 1</a>
+            </li>
+            <li class="text-white py-1 px-2 rounded-lg hover:bg-[#4136F1]">
+              <a href="#">CATEGORY 2</a>
+            </li>
+            <li class="text-white py-1 px-2 rounded-lg hover:bg-[#4136F1]">
+              <a href="#">CATEGORY 3</a>
+            </li>
+            <li class="text-white py-1 px-2 rounded-lg hover:bg-[#4136F1]">
+              <a href="#">CATEGORY 4</a>
+            </li>
+            <li class="text-white py-1 px-2 rounded-lg hover:bg-[#4136F1]">
+              <a href="#">CATEGORY 5</a>
+            </li>
+            <li class="text-white py-1 px-2 rounded-lg hover:bg-[#4136F1]">
+              <a href="#">CATEGORY 6</a>
+            </li>
+            <li class="text-white py-1 px-2 rounded-lg hover:bg-[#4136F1]">
+              <a href="#">CATEGORY 7</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="list-movie bg-[#000] h-auto w-screen py-12">
+      <div class="max-w-6xl mx-auto px-4">
+        <div
+          class="card-list pr-4 sm:pr-0 flex flex-wrap justify-center xl:justify-start"
+        >
+          <div class="card-item w-[270px] h-[450px]">
+            <a href="detail.html">
+              <img
+                class="rounded-xl w-full object-cover"
+                src="/src/components/img/page 2 1.png"
+                alt=""
+              />
+              <div class="flex ml-3">
+                <img
+                  class="w-[30px] h-[30px] object-cover rounded-full"
+                  src="/src/components/img/avatar.jpg"
+                  alt=""
+                />
+                <p class="text-white">Mr. Titikorn T</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-item w-[270px] h-[450px]">
+            <img
+              class="rounded-xl w-full object-cover"
+              src="/src/components/img/page 2 3.png"
+              alt=""
+            />
+            <div class="flex ml-3">
+              <img
+                class="w-[30px] h-[30px] object-cover rounded-full"
+                src="/src/components/img/avatar.jpg"
+                alt=""
+              />
+              <p class="text-white">Mr. Titikorn T</p>
+            </div>
+          </div>
+          <div class="card-item w-[270px] h-[450px]">
+            <img
+              class="rounded-xl w-full object-cover"
+              src="/src/components/img/page 2 4.png"
+              alt=""
+            />
+            <div class="flex ml-3">
+              <img
+                class="w-[30px] h-[30px] object-cover rounded-full"
+                src="/src/components/img/avatar.jpg"
+                alt=""
+              />
+              <p class="text-white">Mr. Titikorn T</p>
+            </div>
+          </div>
+          <div class="card-item w-[270px] h-[450px]">
+            <img
+              class="rounded-xl w-full object-cover"
+              src="/src/components/img/page 2 5.png"
+              alt=""
+            />
+            <div class="flex ml-3">
+              <img
+                class="w-[30px] h-[30px] object-cover rounded-full"
+                src="/src/components/img/avatar.jpg"
+                alt=""
+              />
+              <p class="text-white">Mr. Titikorn T</p>
+            </div>
+          </div>
+          <div class="card-item w-[270px] h-[450px]">
+            <img
+              class="rounded-xl w-full object-cover"
+              src="/src/components/img/page 2 6.png"
+              alt=""
+            />
+            <div class="flex ml-3">
+              <img
+                class="w-[30px] h-[30px] object-cover rounded-full"
+                src="/src/components/img/avatar.jpg"
+                alt=""
+              />
+              <p class="text-white">Mr. Titikorn T</p>
+            </div>
+          </div>
+          <div class="card-item w-[270px] h-[450px]">
+            <img
+              class="rounded-xl w-full object-cover"
+              src="/src/components/img/page 2 7.png"
+              alt=""
+            />
+            <div class="flex ml-3">
+              <img
+                class="w-[30px] h-[30px] object-cover rounded-full"
+                src="/src/components/img/avatar.jpg"
+                alt=""
+              />
+              <p class="text-white">Mr. Titikorn T</p>
+            </div>
+          </div>
+          <div class="card-item w-[270px] h-[450px]">
+            <img
+              class="rounded-xl w-full object-cover"
+              src="/src/components/img/page 2 8.png"
+              alt=""
+            />
+            <div class="flex ml-3">
+              <img
+                class="w-[30px] h-[30px] object-cover rounded-full"
+                src="/src/components/img/avatar.jpg"
+                alt=""
+              />
+              <p class="text-white">Mr. Titikorn T</p>
+            </div>
+          </div>
+          <div class="card-item w-[270px] h-[450px]">
+            <img
+              class="rounded-xl w-full object-cover"
+              src="/src/components/img/page 2 9.png"
+              alt=""
+            />
+            <div class="flex ml-3">
+              <img
+                class="w-[30px] h-[30px] object-cover rounded-full"
+                src="/src/components/img/avatar.jpg"
+                alt=""
+              />
+              <p class="text-white">Mr. Titikorn T</p>
+            </div>
+          </div>
+          <div class="card-item w-[270px] h-[450px]">
+            <img
+              class="rounded-xl w-full object-cover"
+              src="/src/components/img/page 2 10.png"
+              alt=""
+            />
+            <div class="flex ml-3">
+              <img
+                class="w-[30px] h-[30px] object-cover rounded-full"
+                src="/src/components/img/avatar.jpg"
+                alt=""
+              />
+              <p class="text-white">Mr. Titikorn T</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="button bg-gray-500 w-[200px] rounded-lg mx-auto text-center py-2"
+      >
+        <a class="text-white" href="#">Load More</a>
+      </div>
+    </section>
+  </body>
+
+  <style>
+
+  </style>
+</html>

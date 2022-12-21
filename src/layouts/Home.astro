@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f7f7b812cc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"
+    ></script>
+    <style>
+      /* nav {
+            backdrop-filter: blur(10px);
+        } */
+    </style>
+  </head>
+
+  <body>
+    <div
+      class="hero bg-[url('src/components/img/Hero.png')] w-screen h-auto bg-no-repeat bg-cover md:h-[90vh] lg:h-[110vh]"
+    >
+      <nav
+        class="fixed top-0 left-0 right-0 backdrop-blur-md backdrop-brightness-200 bg-transparent"
+      >
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex justify-between">
+            <div class="flex space-x-7">
+              <div>
+                <!-- Website Logo -->
+                <a
+                  href="index.html"
+                  class="flex items-center py-4 px-2 text-white"
+                >
+                  <img
+                    src="/src/components/img/logo.png"
+                    alt=""
+                    class="w-full h-10"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- Secondary Navbar items -->
+            <div class="hidden md:flex items-center space-x-3">
+              <a
+                href="showcase.html"
+                class="py-2 px-2 font-medium text-white rounded hover:bg-[#4136F1] hover:text-white transition duration-300"
+                >Showcase</a
+              >
+              <a
+                href=""
+                class="py-2 px-2 font-medium text-white rounded hover:bg-[#4136F1] transition duration-300"
+                >Docs</a
+              >
+              <a
+                href=""
+                class="py-2 px-2 font-medium text-white rounded hover:bg-[#4136F1] transition duration-300"
+                >Blog</a
+              >
+              <a
+                href=""
+                class="py-2 px-2 font-medium text-white rounded hover:bg-[#4136F1] transition duration-300"
+                >Alanatic</a
+              >
+              <a
+                href=""
+                class="py-2 px-2 font-medium text-white rounded hover:bg-[#4136F1] transition duration-300"
+                >Template</a
+              >
+              <a
+                href=""
+                class="py-2 px-2 font-medium text-white rounded hover:bg-[#4136F1] transition duration-300"
+                >Enterprise</a
+              >
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+              <button class="outline-none mobile-menu-button">
+                <svg
+                  class="w-6 h-6 text-white hover:text-white"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu bg-neutral-800 mr-4 md:mr-0">
+          <ul class="">
+            <li class="active">
+              <a
+                href="index.html"
+                class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition duration-300"
+                >Showcase</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition duration-300"
+                >Docs</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition duration-300"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition duration-300"
+                >Alanatic Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition duration-300"
+                >Template</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block text-sm px-2 py-4 text-white hover:bg-[#4136F1] transition duration-300"
+                >Enterprise</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Start DEV.X -->
+      <section class="hero max-w-6xl mx-auto px-4">
+        <div class="flex">
+          <div class="left text-white md:w-3/6 md:mt-12 lg:mt-20">
+            <div class="text-7xl my-12 md:text-9xl text-center lg:text-left">
+              <img src="/src/components/img/logo.png" alt="" />
+            </div>
+            <p class="md:w-full md:text-lg lg:w-5/6">
+              You could see it in the clothes she
+              <span class="text-[#4136F1] font-bold">wore that color</span> was an
+              important part of her overall style.
+            </p>
+          </div>
+          <div class="right hidden text-white md:block md:w-3/6">
+            <img src="/src/components/img/Image 282.png" alt="" />
+          </div>
+        </div>
+        <div class="button py-20 md:py-8 lg:py-0">
+          <button
+            class="mx-auto block bg-gradient-to-r from-[#8743FF] to-[#4136F1] px-20 py-4 rounded-3xl"
+          >
+            <a href="#" class="text-white">Get Start</a>
+          </button>
+        </div>
+      </section>
+    </div>
+    <!-- End DEV.X -->
+
+    <!-- Start StoryTeller -->
+    <section class="story bg-[#171717] w-screen h-auto">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2
+          class="text-[#4136F1] text-5xl text-center md:text-7xl font-bold lg:text-8xl mb-6"
+        >
+          STORYTELLER
+        </h2>
+        <div class="person-all md:flex flex-wrap py-12">
+          <div class="person1 w-[180px] h-auto mx-auto pb-4">
+            <img src="/src/components/img/person1.png" alt="person1" />
+            <h2 class="text-white font-medium text-center">AMELIA CHAMBEL</h2>
+            <p class="text-gray-500 text-center">Front End Developer</p>
+          </div>
+          <div class="person2 w-[180px] h-auto mx-auto pb-4">
+            <img src="/src/components/img/person2.png" alt="person1" />
+            <h2 class="text-white font-medium text-center">HARRY O’BRIEN</h2>
+            <p class="text-gray-500 text-center">Full Stack Developer</p>
+          </div>
+          <div class="person3 w-[180px] h-auto mx-auto pb-4">
+            <img src="/src/components/img/person3.png" alt="person1" />
+            <h2 class="text-white font-medium text-center">ANDERSON HOWARD</h2>
+            <p class="text-gray-500 text-center">Full Stack Developer</p>
+          </div>
+          <div class="person4 w-[180px] h-auto mx-auto pb-4">
+            <img src="/src/components/img/person4.png" alt="person1" />
+            <h2 class="text-white font-medium text-center">TAYLOR GONE</h2>
+            <p class="text-gray-500 text-center">TAYLOR GONE</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End StoryTeller -->
+
+    <!-- Start ROAD TO DEV.X -->
+    <section
+      class="background bg-[url('/src/components/img/galax-4.png')] w-screen h-auto bg-no-repeat bg-cover"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        '
+        <div class="seemore mb-14">
+          <h2 class="text-white text-center">
+            See More <br /><i class="fas fa-chevron-down text-white text-2xl"
+            ></i>
+          </h2>
+        </div>
+        <h2 class="text-white text-center text-5xl">ROAD TO DEV.X</h2>
+        <!-- Slides -->
+        
+        <div class="sliderAx h-auto mt-24">
+          <div id="slider-1" class="container mx-auto">
+              <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill"
+                  style="background-image: url(https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1422&q=80)">
+                  <div class="md:w-1/2">
+                      <p class="font-bold text-sm uppercase">Services</p>
+                      <p class="text-3xl font-bold">Hello world</p>
+                      <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+                      <a href="#"
+                          class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact
+                          us</a>
+                  </div>
+              </div> <!-- container -->
+              <br>
+          </div>
+
+          <div id="slider-2" class="container mx-auto">
+              <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill"
+                  style="background-image: url(https://images.unsplash.com/photo-1544144433-d50aff500b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
+
+                  <p class="font-bold text-sm uppercase">Services</p>
+                  <p class="text-3xl font-bold">Hello world</p>
+                  <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+                  <a href="#"
+                      class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact
+                      us</a>
+
+              </div> <!-- container -->
+              <br>
+          </div>
+      </div>
+      <div class="flex justify-between w-12 mx-auto pb-2">
+          <button id="sButton1" onclick="sliderButton1()" class="bg-purple-400 rounded-full w-4 pb-2 "></button>
+          <button id="sButton2" onclick="sliderButton2() " class="bg-purple-400 rounded-full w-4 p-2"></button>
+      </div>
+
+        <!-- End Slide -->
+        <div class="text-white text-center py-4">
+          <h2 class="text-3xl font-bold">DEV.X 01</h2>
+          <h2 class="text-3xl font-bold">INTRO TO DEV.X</h2>
+        </div>
+        <div class="pt-5 pb-20">
+          <p class="text-gray-500 text-center">
+            Patricia’s friend who was here hardly had any issues at all, but she
+            wasn’t telling the truth. Yesterday, before she left to go home, she
+            heard that her husband is in the hospital and pretended to be
+            surprised.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End ROAD TO DEV.X -->
+
+    <!-- Start Session Category -->
+    <section class="seesion bg-[#171717] w-screen h-auto">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-white text-center text-2xl font-bold pb-10 pt-7">
+          Session Category
+        </h2>
+        <p class="text-gray-500 text-center">
+          one dollar and eighty-seven cents. that was all. and sixty cents of it
+          was in pennies.
+        </p>
+        <div
+          class="card-all mt-5 px-4 pb-7 flex flex-wrap justify-center items-center gap-y-5 sm:gap-x-4"
+        >
+          <div
+            class="card-item py-5 px-3 text-white border-2 rounded-3xl w-[300px] h-auto"
+          >
+            <h2 class="font-bold pb-3">SESSION CATEGORY 01</h2>
+            <p class="text-gray-500 pb-3">
+              i get a lovely view of the bay and a little private wharf
+              belonging to the estate.
+            </p>
+
+            <div class="link flex items-center text-[#4136F1] font-bold">
+              <a href="#">Documentation</a>
+              <svg
+                class="w-[20px] h-[20px]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="card-item py-5 px-3 text-white border-2 rounded-3xl w-[300px] h-auto"
+          >
+            <h2 class="font-bold pb-3">SESSION CATEGORY 01</h2>
+            <p class="text-gray-500 pb-3">
+              i get a lovely view of the bay and a little private wharf
+              belonging to the estate.
+            </p>
+
+            <div class="link flex items-center text-[#4136F1] font-bold">
+              <a href="#">Documentation</a>
+              <svg
+                class="w-[20px] h-[20px]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="card-item py-5 px-3 text-white border-2 rounded-3xl w-[300px] h-auto"
+          >
+            <h2 class="font-bold pb-3">SESSION CATEGORY 01</h2>
+            <p class="text-gray-500 pb-3">
+              i get a lovely view of the bay and a little private wharf
+              belonging to the estate.
+            </p>
+
+            <div class="link flex items-center text-[#4136F1] font-bold">
+              <a href="#">Documentation</a>
+              <svg
+                class="w-[20px] h-[20px]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="card-item py-5 px-3 text-white border-2 rounded-3xl w-[300px] h-auto"
+          >
+            <h2 class="font-bold pb-3">SESSION CATEGORY 01</h2>
+            <p class="text-gray-500 pb-3">
+              i get a lovely view of the bay and a little private wharf
+              belonging to the estate.
+            </p>
+
+            <div class="link flex items-center text-[#4136F1] font-bold">
+              <a href="#">Documentation</a>
+              <svg
+                class="w-[20px] h-[20px]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="card-item py-5 px-3 text-white border-2 rounded-3xl w-[300px] h-auto"
+          >
+            <h2 class="font-bold pb-3">SESSION CATEGORY 01</h2>
+            <p class="text-gray-500 pb-3">
+              i get a lovely view of the bay and a little private wharf
+              belonging to the estate.
+            </p>
+
+            <div class="link flex items-center text-[#4136F1] font-bold">
+              <a href="#">Documentation</a>
+              <svg
+                class="w-[20px] h-[20px]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="card-item py-5 px-3 text-white border-2 rounded-3xl w-[300px] h-auto"
+          >
+            <h2 class="font-bold pb-3">SESSION CATEGORY 01</h2>
+            <p class="text-gray-500 pb-3">
+              i get a lovely view of the bay and a little private wharf
+              belonging to the estate.
+            </p>
+
+            <div class="link flex items-center text-[#4136F1] font-bold">
+              <a href="#">Documentation</a>
+              <svg
+                class="w-[20px] h-[20px]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="card-item py-5 px-3 text-white border-2 rounded-3xl w-[300px] h-auto"
+          >
+            <h2 class="font-bold pb-3">SESSION CATEGORY 01</h2>
+            <p class="text-gray-500 pb-3">
+              i get a lovely view of the bay and a little private wharf
+              belonging to the estate.
+            </p>
+
+            <div class="link flex items-center text-[#4136F1] font-bold">
+              <a href="#">Documentation</a>
+              <svg
+                class="w-[20px] h-[20px]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="card-item py-5 px-3 text-white border-2 rounded-3xl w-[300px] h-auto"
+          >
+            <h2 class="font-bold pb-3">SESSION CATEGORY 01</h2>
+            <p class="text-gray-500 pb-3">
+              i get a lovely view of the bay and a little private wharf
+              belonging to the estate.
+            </p>
+
+            <div class="link flex items-center text-[#4136F1] font-bold">
+              <a href="#">Documentation</a>
+              <svg
+                class="w-[20px] h-[20px]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="card-item py-5 px-3 text-white border-2 rounded-3xl w-[300px] h-auto"
+          >
+            <h2 class="font-bold pb-3">SESSION CATEGORY 01</h2>
+            <p class="text-gray-500 pb-3">
+              i get a lovely view of the bay and a little private wharf
+              belonging to the estate.
+            </p>
+
+            <div class="link flex items-center text-[#4136F1] font-bold">
+              <a href="#">Documentation</a>
+              <svg
+                class="w-[20px] h-[20px]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-white text-center pb-24">
+          it had taken years to perfect and he could now do it without even
+          putting any <span class="text-[#4136F1] font-semibold"
+            >thought behind it.</span
+          >
+        </h2>
+      </div>
+    </section>
+    <!-- End Session Category -->
+
+    <!-- Start Heard the song -->
+    <section class="heard bg-[#171717] w-screen h-auto">
+      <div class="max-w-6xl mx-auto px-4 md:flex">
+        <div class="py-12 w-full h-[150px] md:w-[55%]">
+          <h2 class="text-white text-center text-2xl font-semibold lg:text-4xl">
+            HE HEARD THE SONG COMING FROM A DISTANCE, LIGHTLY
+          </h2>
+        </div>
+        <div class="w-[300px] h-auto mx-auto md:w-[45%]">
+          <h2 class="text-gray-500 pb-4">
+            Patricia’s friend who was here hardly had any issues at all, but she
+            wasn’t telling the truth. Yesterday, before she left
+          </h2>
+          <div class="flex justify-between">
+            <div class="project">
+              <h2 class="text-white text-4xl">120K</h2>
+              <h2 class="text-gray-500 py-5">Project</h2>
+            </div>
+            <div class="follow">
+              <h2 class="text-white text-4xl">82K</h2>
+              <h2 class="text-gray-500 py-5">Follower</h2>
+            </div>
+            <div class="review">
+              <h2 class="text-white text-4xl">56K</h2>
+              <h2 class="text-gray-500 py-5">Review</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Heard the song -->
+
+    <section class="title py-6 bg-[#171717] w-screen h-auto">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="gap-4 pr-4 sm:pr-0 sm:flex">
+          <div
+            class="title-1 h-auto w-full bg-[url('/src/components/img/title1.png')] lg:w-[55%] bg-no-repeat bg-cover"
+          >
+            <div class="card text-white">
+              <div class="info flex flex-col justify-between">
+                <h2 class="title pt-8 text-2xl pl-5">Title 01</h2>
+                <div>
+                  <p class="pb-8 text-center">
+                    Patricia’s friend who was here hardly had any issues at all,
+                    but she wasn’t telling the truth. Yesterday, before she left
+                    to go home, she heard that her husband is in the hospital
+                    and pretended to be surprised.
+                  </p>
+                </div>
+                <div class="flex justify-between px-5 pb-5">
+                  <div class="flex">
+                    <img
+                      class="w-7 h-6 rounded-full"
+                      src="/src/components/img/avatar.jpg"
+                      alt=""
+                    />
+                    <h2 class="ml-3">Mr. Titikorn .T</h2>
+                  </div>
+                  <div>
+                    <p>07 Jan 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="title-1 h-auto w-full bg-[url('/src/components/img/title2.jpg')] lg:w-[45%] bg-no-repeat bg-cover"
+          >
+            <div class="card text-white">
+              <div class="info flex flex-col justify-between">
+                <h2 class="title pt-8 text-2xl pl-5">Title 02</h2>
+                <div>
+                  <p class="pb-8 text-center">
+                    Patricia’s friend who was here hardly had any issues at all,
+                    but she wasn’t telling the truth. Yesterday, before she left
+                    to go home, she heard that her husband is in the hospital
+                    and pretended to be surprised.
+                  </p>
+                </div>
+                <div class="flex justify-between px-5 pb-5">
+                  <div class="flex">
+                    <img
+                      class="w-7 h-6 rounded-full"
+                      src="/src/components/img/avatar.jpg"
+                      alt=""
+                    />
+                    <h2 class="ml-3">Mr. Titikorn .T</h2>
+                  </div>
+                  <div>
+                    <p>07 Jan 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skill bg-[#171717] w-screen h-auto">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="pr-4 sm:pr-0 sm:flex gap-4">
+          <div
+            class="title-1 h-auto w-full bg-[url('/src/components/img/java1.png')] lg:w-[40%] bg-no-repeat bg-cover"
+          >
+            <div class="card text-white">
+              <div class="info flex flex-col justify-between">
+                <h2 class="title pt-8 text-2xl pl-5">
+                  JAVA SCRIPT AND SOUND ETC
+                </h2>
+                <div>
+                  <p class="pb-8 text-center">
+                    Patricia’s friend who was here hardly had any issues at all,
+                    but she wasn’t telling the truth. Yesterday, before she left
+                    to go home, she heard that her husband is in the hospital
+                    and pretended to be surprised.
+                  </p>
+                </div>
+                <div class="flex justify-between px-5 pb-5">
+                  <div class="flex">
+                    <img
+                      class="w-7 h-6 rounded-full"
+                      src="/src/components/img/avatar.jpg"
+                      alt=""
+                    />
+                    <h2 class="ml-3">Mr. Titikorn .T</h2>
+                  </div>
+                  <div>
+                    <p>07 Jan 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="title-1 h-auto w-full bg-[url('/src/components/img/java2.png')] lg:w-[60%] bg-no-repeat bg-cover"
+          >
+            <div class="card text-white">
+              <div class="info flex flex-col justify-between">
+                <h2 class="title pt-8 text-2xl pl-5">
+                  JAVA SCRIPT AND SOUND ETC
+                </h2>
+                <div>
+                  <p class="pb-8 text-center">
+                    Patricia’s friend who was here hardly had any issues at all,
+                    but she wasn’t telling the truth. Yesterday, before she left
+                    to go home, she heard that her husband is in the hospital
+                    and pretended to be surprised.
+                  </p>
+                </div>
+                <div class="flex justify-between px-5 pb-5">
+                  <div class="flex">
+                    <img
+                      class="w-7 h-6 rounded-full"
+                      src="/src/components/img/avatar.jpg"
+                      alt=""
+                    />
+                    <h2 class="ml-3">Mr. Titikorn .T</h2>
+                  </div>
+                  <div>
+                    <p>07 Jan 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#171717] w-screen h-auto py-24">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="md:flex md:items-center">
+          <div class="text-center md:w-[60%] md:text-left">
+            <h2 class="text-white mb-4 text-lg font-semibold">
+              THAT WASN’T TO SAY THAT HE HADN’T DISAPPOINTED OTHERS.
+            </h2>
+            <p class="text-white">
+              the fact was that he had disappointed a lot of people who were
+              close to him. the fact that they were disappointed in him was <span
+                class="text-[#4136F1] font-semibold">something</span
+              > that made him even more <span
+                class="text-[#4136F1] font-semibold">disappointed</span
+              > in himself.
+            </p>
+          </div>
+          <div
+            class="text-center mx-auto mt-8 border-2 border-[#8042FB] rounded-md w-64 py-2 md:mt-0 md:h-[45px]"
+          >
+            <a class="text-[#8042FB]" href="#">Get Start</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <style>
+    .info {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background-color: rgba(201, 201, 201, 0.3);
+      transform: translateY(100%) translateY(-88px) translateZ(0);
+      transition: transform 0.5s ease-out;
+    }
+
+    .card {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 100%;
+      min-height: 400px;
+      overflow: hidden;
+      /* background-image: url(https://source.unsplash.com/collection/905011/1000x1000); */
+      background-size: cover;
+    }
+
+    .info {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background-color: rgba(201, 201, 201, 0.3);
+      transform: translateY(100%) translateY(-88px) translateZ(0);
+      transition: transform 0.5s ease-out;
+    }
+
+    .info:before {
+      z-index: -1;
+      display: block;
+      position: absolute;
+      content: " ";
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      filter: blur(10px);
+      background-size: cover;
+      opacity: 0.25;
+      transform: translateY(-100%) translateY(88px) translateZ(0);
+      transition: transform 0.5s ease-out;
+    }
+
+    .card:hover .info,
+    .card:hover .info:before {
+      transform: translateY(0) translateZ(0);
+    }
+  </style>
+  <!-- <script>
+    // Open & Close menu mobile
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn?.addEventListener("click", () => {
+      menu?.classList.toggle("hidden");
+    });
+
+    var cont = 0;
+    function loopSlider() {
+      var xx = setInterval(function () {
+        switch (cont) {
+          case 0: {
+            $("#slider-1").fadeOut(400);
+            $("#slider-2").delay(400).fadeIn(400);
+            $("#sButton1").removeClass("bg-purple-800");
+            $("#sButton2").addClass("bg-purple-800");
+            cont = 1;
+
+            break;
+          }
+          case 1: {
+            $("#slider-2").fadeOut(400);
+            $("#slider-1").delay(400).fadeIn(400);
+            $("#sButton2").removeClass("bg-purple-800");
+            $("#sButton1").addClass("bg-purple-800");
+
+            cont = 0;
+
+            break;
+          }
+        }
+      }, 8000);
+    }
+
+    function reinitLoop(time: any) {
+      clearInterval(xx);
+      setTimeout(loopSlider(), time);
+    }
+
+    function sliderButton1() {
+      $("#slider-2").fadeOut(400);
+      $("#slider-1").delay(400).fadeIn(400);
+      $("#sButton2").removeClass("bg-purple-800");
+      $("#sButton1").addClass("bg-purple-800");
+      reinitLoop(4000);
+      cont = 0;
+    }
+
+    function sliderButton2() {
+      $("#slider-1").fadeOut(400);
+      $("#slider-2").delay(400).fadeIn(400);
+      $("#sButton1").removeClass("bg-purple-800");
+      $("#sButton2").addClass("bg-purple-800");
+      reinitLoop(4000);
+      cont = 1;
+    }
+
+    $(window).ready(function () {
+      $("#slider-2").hide();
+      $("#sButton1").addClass("bg-purple-800");
+
+      loopSlider();
+    });
+  </script> -->
+</html>

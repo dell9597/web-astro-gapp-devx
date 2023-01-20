@@ -1,0 +1,130 @@
+<script>
+const days = document.getElementById('days');
+const hours = document.getElementById('hours');
+const minutes = document.getElementById('minutes');
+const seconds = document.getElementById('seconds');
+
+const endTime = new Date("Jan 26, 2023 00:00:00").getTime();
+
+function updateCountDownTime(){
+  const currentTime = new Date().getTime();
+  const diff = endTime-currentTime;
+
+  const d = Math.floor(diff/1000/60/60/24);
+  const h = Math.floor(diff/1000/60/60)%24;
+  const m = Math.floor(diff/1000/60)%60;
+  const s = Math.floor(diff/1000)%60;
+
+  days.innerHTML = d<10?'0'+d:d;
+  hours.innerHTML = h < 10 ? '0'+h:h;
+  minutes.innerHTML = m < 10 ? '0'+m:m;
+  seconds.innerHTML = s < 10 ? '0'+s:s;
+}
+
+setInterval(updateCountDownTime,1000);
+</script>
+
+<div class="countdown-cover">
+  <section class="section-countdown">
+
+    <!-- <video autoplay muted loop id="myVideo">
+      <source src=".//Space Ship - 3.mp4" type="video/mp4">
+    </video> -->
+
+    <h1>DO YOU WANT TO DO THIS</h1>
+  <h2 class="sub-head">COMING SOON</h2>
+  <div id="countdown" class="countdown">
+
+    <div class="time">
+      <h2 id="days">00</h2>
+      <label>DAYS</label>
+    </div>
+    <div class="time">
+      <h2 id="hours">00</h2>
+      <label>HOURS</label>
+    </div>
+    <div class="time">
+      <h2 id="minutes">00</h2>
+      <label>MINUTES</label>
+    </div>
+    <div class="time">
+      <h2 id="seconds">00</h2>
+      <label>SECONDS</label>
+    </div>
+
+  </div>
+  </section>
+</div>
+ 
+
+
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+
+*{
+  box-sizing: border-box;
+  font-family: "Quicksand",sans-serif;
+}
+.countdown-cover{
+  background-image: url(./image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin:0;
+  overflow: hidden;
+}
+.bg-video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+h1{
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 100px var(--unnamed-font-family-brandon-grotesque);
+  font-size: 64px;
+  color: #FFFFFF;
+  margin: 0 0 16px 0;
+}
+.sub-head{
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 32px/46px var(--unnamed-font-family-brandon-grotesque);
+  font-size: 24px;
+  letter-spacing: 6.4px;
+  color: #8042FB;
+}
+label{
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 32px/46px var(--unnamed-font-family-brandon-grotesque);
+  font-size: 16px;
+  color: #8042FB;
+}
+.countdown{
+  display: flex;
+}
+.time{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 14px;
+  width: 128px;
+}
+
+.time h2{
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 32px/46px var(--unnamed-font-family-brandon-grotesque);
+  color: #FFFFFF;
+  font-size: 24px;
+}
+.section-countdown{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  </style>

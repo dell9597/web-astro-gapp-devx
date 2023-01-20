@@ -1,9 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Home from "../components/Home.astro";
+import Countdown from "../components/Countdown.astro";
+import { Speaker } from "../components/Speaker";
 const pageTitle ="DEV.X";
 ---
 
 <Layout pageTitle={pageTitle}>
+    <Countdown></Countdown>
     <Home></Home>
+    <Speaker>
+    <img slot="imgSpeaker" src="/assets/img/00.png"/>
+    <label slot="nameSpeaker">Testname </label>
+    <label slot="roleSpeaker">DEV</label>
+    </Speaker>
 </Layout>

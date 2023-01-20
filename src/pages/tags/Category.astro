@@ -1,0 +1,86 @@
+---
+const allPosts = await Astro.glob("../posts/*.md");
+const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+---
+
+<!-- Start Session Category -->
+<section class="seesion bg-[#171717] w-full h-auto">
+    <div class="max-w-6xl mx-auto">
+        
+      <h2 class="text-white text-center text-2xl font-bold pb-10 pt-7">
+        Session Category
+      </h2>
+      <p class="text-gray-500 text-center">
+        one dollar and eighty-seven cents. that was all. and sixty cents of it
+        was in pennies.
+      </p>
+      <div class="flex flex-wrap justify-center gap-y-5 sm:gap-x-3 py-4">
+        {
+          tags.map((tag) => (
+            <div class="py-5 px-3 text-white text-star border-2 rounded-3xl w-[300px] h-[200px]">
+              <a class="font-bold text-2xl" href={`./tags/${tag}`}>{tag}</a>
+
+              <p class="text-gray-500 pt-3">
+              i get a lovely view of the bay and a little private wharf
+              belonging to the estate.
+              </p>
+
+              <div class="link flex items-center text-[#4136F1] font-bold">
+                <a href="/tags/">Documentation</a>
+                <svg
+                  class="w-[20px] h-[20px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width={1.5}
+                  stroke="currentColor"
+                  class-Name="w-6 h-6"
+                >
+                  <path
+                    stroke-Linecap="round"
+                    stroke-Linejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                </svg>
+              </div>
+            </div>          
+          ))
+        }
+      </div>
+
+      <!-- <div class="card-all mt-5 px-4 pb-7 flex flex-wrap justify-star items-center gap-y-5 sm:gap-x-4">
+        <div class="card-item py-5 px-3 text-white border-2 rounded-3xl w-[300px] h-auto">
+          <h2 class="font-bold pb-3">SESSION CATEGORY 01</h2>
+          <p class="text-gray-500 pb-3">
+            i get a lovely view of the bay and a little private wharf
+            belonging to the estate.
+          </p>
+
+          <div class="link flex items-center text-[#4136F1] font-bold">
+            <a href="#">Documentation</a>
+            <svg
+              class="w-[20px] h-[20px]"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width={1.5}
+              stroke="currentColor"
+              class-Name="w-6 h-6"
+            >
+              <path
+                stroke-Linecap="round"
+                stroke-Linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </div>
+        </div>
+
+      </div> -->
+      
+      <h2 class="text-white text-center pb-24">
+        it had taken years to perfect and he could now do it without even
+        putting any <span class="text-[#4136F1] font-semibold"
+          >thought behind it.</span
+        >
+      </h2>
+    </div>
+  </section>

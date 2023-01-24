@@ -1,8 +1,9 @@
 ---
+import { CardContent } from "../components/CardContent";
 const { title, url } = Astro.props;
 ---
 
-<div class="pb-[72px] px-3">
+<!-- <div class="pb-[72px] px-3">
   <div class="w-[317px]">
     <div class="card-list">
       <div class="card-item">
@@ -23,4 +24,13 @@ const { title, url } = Astro.props;
       </div>
     </div>
   </div>
+</div> -->
+
+<div class="pb-[72px] px-3">
+  <CardContent>
+    <img slot="coverContent" src="/assets/img/1.jpg"/>
+    <p slot="nameContent">Test Name Topic : Name</p>
+    <img slot="imgSpeaker" src="/assets/img/00.png"/>
+    <label slot="nameSpeaker"><a href={url}>{title}</a></label>
+  </CardContent>
 </div>

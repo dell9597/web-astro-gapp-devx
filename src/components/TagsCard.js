@@ -10,21 +10,35 @@ export class TagCard extends LitElement {
     }
     .card-tag{
       border: 1px solid #777777;
-      width: 413px;
+      width: 303px;
+      height: 174px;
       border-radius: 32px;
-      padding: 32px;
+      padding: 28px;
+  }
+  @media only screen and (max-width: 280px) {
+    .card-tag {
+      width: 230px;
+      padding: 20px;
+    }
   }
   .tag-topic{
-      font: normal normal bold 30px/43px Brandon Grotesque;
+      font: normal normal bold 25px/33px Brandon Grotesque;
       color: #FFFFFF;
       text-transform: uppercase;
       margin: 0 0 16px 0;
   }
   .tag-description{
-      font: normal 24px Brandon Grotesque;
+      font: normal 20px Brandon Grotesque;
       color: #FFFFFF;
       opacity: 0.5;
-      width: 384px;
+      width: 274px;
+      overflow: hidden;
+      height: 72px;
+  }
+  @media only screen and (max-width: 280px) {
+    .tag-description {
+      width: 240px;
+    }
   }
   .tag-document{
       font: normal 24px Brandon Grotesque;

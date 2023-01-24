@@ -25,8 +25,7 @@ const { posts } = Astro.props;
 ---
 
 <Layout pageTitle={tag}>
-  <p>Posts tagged with {tag}</p>
-  <ul class="mt-[72px] grid md:grid-cols-4">
+  <ul class="mt-[78px] flex flex-wrap justify-center">
     {
       posts.map((post) => (
         <BlogPost url={post.url} title={post.frontmatter.title} />

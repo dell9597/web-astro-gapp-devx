@@ -5,9 +5,8 @@ const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
 ---
 
 <!-- Start Session Category -->
-<section class="seesion bg-[#171717] w-full h-auto">
-    <div class="max-w-6xl mx-auto">
-        
+<section class="seesion bg-[#171717] pt-6 w-full h-auto">
+    <div class="max-w-6xl mx-auto">    
       <h2 class="text-white text-center text-4xl font-bold pb-10 pt-7">
         Session Category
       </h2>
@@ -19,12 +18,10 @@ const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
       <div class="flex flex-wrap justify-center gap-y-5 sm:gap-x-3 py-4">
         {
           tags.map((tag) => (
-            <div class="">
-              <TagCard>
-                <label slot="tagName"><a href={`./tags/${tag}`}>{tag}</a></label>
-                <p slot="tagDis">i get a lovely view of thei get a lovely view of thei get a lovely view of thei get a lovely view of thei get a lovely view of thei get a lovely view of the bay and a little private wharf belonging to the estate.</p>
-              </TagCard> 
-            </div>    
+            <TagCard>
+              <label slot="tagName"><a href={`./tags/${tag}`}>{tag}</a></label>
+              <p slot="tagDis">i get a lovely view of thei get a lovely view of thei get a lovely view of thei get a lovely view of thei get a lovely view of thei get a lovely view of the bay and a little private wharf belonging to the estate.</p>
+            </TagCard> 
           ))
         }
       </div>

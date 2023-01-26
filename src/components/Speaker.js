@@ -9,7 +9,7 @@ export class Speaker extends LitElement {
       background: #171717;
     }
     ::slotted(img){
-      width: 332px;
+      width: 100%;
       height:513px !important;
       border-radius: 160px;
       object-fit: cover;
@@ -30,6 +30,13 @@ export class Speaker extends LitElement {
     transition-duration: 0.4s;
     filter: grayscale(0%);
   }
+
+  @media only screen and (max-width: 280px) {
+    .img-speaker-home {
+      width: 245px;
+    }
+  }
+
   .speaker-name{
       text-align: left;
       font: bold 30px Brandon Grotesque;

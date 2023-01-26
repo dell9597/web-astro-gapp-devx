@@ -5,8 +5,46 @@ const pageTitle = "Showcase";
 const allPosts = await Astro.glob("../pages/posts/*.md");
 ---
 <Layout pageTitle={pageTitle}>
-    <div class="flex justify-center items-center w-full mt-28">
-        <ul class="grid md:grid-cols-4 mt-28">
+    <div class="max-w-6xl mx-auto px-4 mt-[110px] mb-[80px]">
+        <h2 class="text-white text-3xl text-center md:text-4xl font-bold mb-6">
+          Showcase
+        </h2>
+        <p class="text-white text-center pr-4 sm:pr-0">
+          They decided to find the end of the rainbow.
+        </p>
+        <div class="cate mt-12 mx-auto pr-4 sm:pr-0">
+          <ul
+            class="text-center gap-y-2.5 grid grid-cols-2 items-center justify-center md:grid-cols-3 lg:grid-cols-8"
+          >
+            <li class="text-white py-2 px-6 rounded-lg hover:bg-[#4136F1]">
+              <a href="#">All</a>
+            </li>
+            <li class="text-white py-1 px-2 rounded-lg hover:bg-[#4136F1]">
+              <a href="#">CATEGORY 1</a>
+            </li>
+            <li class="text-white py-1 px-2 rounded-lg hover:bg-[#4136F1]">
+              <a href="#">CATEGORY 2</a>
+            </li>
+            <li class="text-white py-1 px-2 rounded-lg hover:bg-[#4136F1]">
+              <a href="#">CATEGORY 3</a>
+            </li>
+            <li class="text-white py-1 px-2 rounded-lg hover:bg-[#4136F1]">
+              <a href="#">CATEGORY 4</a>
+            </li>
+            <li class="text-white py-1 px-2 rounded-lg hover:bg-[#4136F1]">
+              <a href="#">CATEGORY 5</a>
+            </li>
+            <li class="text-white py-1 px-2 rounded-lg hover:bg-[#4136F1]">
+              <a href="#">CATEGORY 6</a>
+            </li>
+            <li class="text-white py-1 px-2 rounded-lg hover:bg-[#4136F1]">
+              <a href="#">CATEGORY 7</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <div class="w-full flex justify-center bg-[#000000]">
+        <ul class="w-full md:w-3/4 md:grid grid-cols-4 px-2 pt-16">
             {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
          </ul>
     </div>

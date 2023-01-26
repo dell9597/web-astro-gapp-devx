@@ -6,7 +6,7 @@ export class CardContent extends LitElement {
     <style>
     :host {
       display: block;
-      background: #171717;
+      background: #000000;
     }
     ::slotted(img[slot="coverContent"]){
       width: 319px !important;
@@ -21,7 +21,7 @@ export class CardContent extends LitElement {
     }
     .card-showcase{
       width: 317px;
-      height: 472px;
+      height: 456px;
       box-shadow: 0px 10px 6px #00000029;
       border-radius: 15px;
       background-color: #171717;
@@ -32,11 +32,20 @@ export class CardContent extends LitElement {
       margin: 0 0 8px 0 ;
   }
   .img-showcase{
-      width: 319px;
+      width: 100%;
       border-radius: 15px;
       transform: scale(1.0);
       transition-duration: 0.8s;
   }
+
+  @media only screen and (max-width: 280px) {
+    .card-showcase {
+      width: 270px;
+      height: 350px;
+      max-width: 100%;
+    }
+  }
+
   .img-speaker{
       border-radius: 100%;
       width: 32px;

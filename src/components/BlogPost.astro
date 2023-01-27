@@ -1,10 +1,11 @@
 ---
 import { CardContent } from "../components/CardContent";
-const { title, url, author } = Astro.props;
+const { frontmatter } = Astro.props;
+const { title, url, author, image } = Astro.props;
 ---
 <div class="pb-[72px] w-full flex justify-center px-2 bg-[#000000]">
   <CardContent>
-    <img slot="coverContent" src="/assets/img/1.jpg"/>
+    <img slot="coverContent" src="{url}>{image}"/>
     <p slot="nameContent"><a href={url}>{author}</a></p>
     <img slot="imgSpeaker" src="/assets/img/00.png"/>
     <label slot="nameSpeaker"><a href={url}>{title}</a></label>

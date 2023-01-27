@@ -1,22 +1,23 @@
 ---
 import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
+const { title, url, } = Astro.props;
 ---
 
 <Layout pageTitle={frontmatter.title}>
-  <section
-  class="bg-[url('/assets/img/Hero.png')] bg-contain bg-no-repeat lg:bg-cover lg:h-full">
-    <div class="poster">
-      <div
-        class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row pt-32 md:pt-60"
-      >
+  <section class="bg-[url('/assets/img/Hero.png')] bg-no-repeat bg-cover h-auto pb-14">
+    <div class="absolute w-full top-[71px]">
+      <img class="h-[350px] md:h-[450px] w-full bg-cover" src={frontmatter.image.url} alt={frontmatter.image.alt} />
+    </div>
+    <div class="poster relative flex flex-col justify-center">
+      <div class="max-w-6xl mx-auto px-4 flex flex-col justify-center md:flex-row pt-64 ">
         <div class="left">
-          <div class="w-[500px] mx-auto md:pt-24">
-            <img src={frontmatter.image.url} alt={frontmatter.image.alt} />
+          <div class="md:pt-24">
+            <img class="w-[300px] h-[300px] bg-cover" src={frontmatter.image.url} alt={frontmatter.image.alt} />
           </div>
         </div>
         <div>
-          <div class="px-4 md:pt-24 text-gray-500">
+          <div class="px-4 pt-10 md:pt-72 text-gray-500">
             <h2 class="text-3xl pb-4 text-white text-star">Python</h2>
             <p>
               <slot />
@@ -53,7 +54,7 @@ const { frontmatter } = Astro.props;
               </div>
               <ul class="flex flex-wrap gap-2 pt-2">
                 <li class="text-white inline border rounded-md py-1 px-4">
-                  <a href="#">CATEGORY</a>
+                  <a href={url}>{title}</a>
                 </li>
               </ul>
             </div>

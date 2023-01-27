@@ -9,7 +9,7 @@ export class Speaker extends LitElement {
       background: #171717;
     }
     ::slotted(img){
-      width: 100%;
+      width: 332px;
       height:513px !important;
       border-radius: 160px;
       object-fit: cover;
@@ -34,6 +34,7 @@ export class Speaker extends LitElement {
   @media only screen and (max-width: 280px) {
     .img-speaker-home {
       width: 245px;
+      max-width: 100%;
     }
   }
 

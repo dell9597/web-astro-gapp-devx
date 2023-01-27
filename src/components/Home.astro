@@ -1,16 +1,17 @@
 ---
 import Category from "../pages/tags/Category.astro";
 import { Speaker } from "../components/Speaker";
+import Schedule from "./Schedule.astro";
 ---
 <div
   class="hero bg-[url('/assets/img/Hero.png')] w-full h-auto bg-no-repeat bg-cover md:h-[90vh] lg:h-[110vh]"
 >
   <!-- Start DEV.X -->
   <section class="hero max-w-6xl mx-auto px-4">
-    <div class="flex pt-[72px]">
+    <div class="flex pt-0 md:pt-24">
       <div class="left text-white md:w-3/6 md:mt-12 lg:mt-20">
         <div class="text-7xl my-12 md:text-9xl text-center lg:text-left">
-          <img src="/assets/img/logo.png" alt="" />
+          <img src="/assets/img/logo.png" alt=""/>
         </div>
         <p class="md:w-full md:text-lg lg:w-5/6">
           You could see it in the clothes she
@@ -35,312 +36,52 @@ import { Speaker } from "../components/Speaker";
 
 <!-- Start StoryTeller -->
 <section class="story bg-[#171717] w-full h-auto py-24">
-  <div class="w-3/4 text-center mx-auto px-4">
-    <h2
-      class="text-[#4136F1] text-5xl md:text-7xl font-bold lg:text-8xl mb-20"
-    >
+  <div class="text-center mx-auto">
+    <h2 class="text-[#4136F1] text-3xl md:text-5xl lg:text-7xl font-bold mb-20">
       SPEAKERS
     </h2>
-
-    <div class="w-full md:grid grid-cols-4">
-      <!-- <div class="person1 px-2 pb-10">
-        <img src="/assets/img/00.png" alt="person1" class="w-[210px] h-[330px] md:w-[332px] md:h-[440px] rounded-[160px] pb-4" />
-        <h2 class="text-white font-medium text-center">AMELIA CHAMBEL</h2>
-        <p class="text-gray-500 text-center">Front End Developer</p>
-      </div> -->
-
-      <div class="person2 px-2 pb-10">
-        <Speaker>
-          <img slot="imgSpeaker" src="/assets/img/00.png"/>
-          <label slot="nameSpeaker">Testname</label>
-         <label slot="roleSpeaker">DEV</label>
-        </Speaker>   
+    <div class="w-full flex justify-center">
+      <div class=" md:grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+        <div class="md:pr-[16px]pb-10">
+          <Speaker>
+            <img slot="imgSpeaker" src="/assets/img/00.png"/>
+            <label slot="nameSpeaker">Testname</label>
+           <label slot="roleSpeaker">DEV</label>
+          </Speaker>   
+        </div>
+  
+        <div class="md:pr-[16px] pb-10">
+          <Speaker>
+            <img slot="imgSpeaker" src="/assets/img/00.png"/>
+            <label slot="nameSpeaker">Testname</label>
+           <label slot="roleSpeaker">DEV</label>
+          </Speaker>   
+        </div>
+  
+        <div class="md:pr-[16px]] pb-10">
+          <Speaker>
+            <img slot="imgSpeaker" src="/assets/img/01.png"/>
+            <label slot="nameSpeaker">Testname</label>
+           <label slot="roleSpeaker">DEV</label>
+          </Speaker>   
+        </div>
+  
+        <div class="md:pr-[16px] pb-10">
+          <Speaker>
+            <img slot="imgSpeaker" src="/assets/img/02.png"/>
+            <label slot="nameSpeaker">Testname</label>
+           <label slot="roleSpeaker">DEV</label>
+          </Speaker>   
+        </div>
       </div>
-
-      <div class="person2 px-2 pb-10">
-        <Speaker>
-          <img slot="imgSpeaker" src="/assets/img/01.png"/>
-          <label slot="nameSpeaker">Testname</label>
-         <label slot="roleSpeaker">DEV</label>
-        </Speaker>   
-      </div>
-
-      <div class="person2 px-2 pb-10">
-        <Speaker>
-          <img slot="imgSpeaker" src="/assets/img/02.png"/>
-          <label slot="nameSpeaker">Testname</label>
-         <label slot="roleSpeaker">DEV</label>
-        </Speaker>   
-      </div>
-
-      <div class="person2 px-2 pb-10">
-        <Speaker>
-          <img slot="imgSpeaker" src="/assets/img/03.png"/>
-          <label slot="nameSpeaker">Testname</label>
-         <label slot="roleSpeaker">DEV</label>
-        </Speaker>   
-      </div>
-
-      <!-- <div class="person2 px-2 pb-10">
-        <img src="/assets/img/01.png" alt="person1" class="w-[210px] h-[330px] md:w-[332px] md:h-[440px] rounded-[160px] pb-4" />
-        <h2 class="text-white font-medium text-center">AMELIA CHAMBEL</h2>
-        <p class="text-gray-500 text-center">Front End Developer</p>
-      </div>
-
-      <div class="person2 px-2 pb-10">
-        <img src="/assets/img/02.png" alt="person1" class="w-[210px] h-[330px] md:w-[332px] md:h-[440px] rounded-[160px] pb-4" />
-        <h2 class="text-white font-medium text-center">AMELIA CHAMBEL</h2>
-        <p class="text-gray-500 text-center">Front End Developer</p>
-      </div>
-
-      <div class="person2 px-2 pb-10">
-        <img src="/assets/img/03.png" alt="person1" class="w-[210px] h-[330px] md:w-[332px] md:h-[440px] rounded-[160px] pb-4" />
-        <h2 class="text-white font-medium text-center">AMELIA CHAMBEL</h2>
-        <p class="text-gray-500 text-center">Front End Developer</p>
-      </div> -->
     </div>
   </div>
 </section>
-<!-- End StoryTeller -->
-
-<!-- Start ROAD TO DEV.X -->
-<section
-  class="background bg-[url('/assets/img/galax-4.png')] w-full h-auto bg-no-repeat bg-cover"
->
-  <div class="max-w-6xl mx-auto px-4">
-    '
-    <div class="seemore mb-14">
-      <h2 class="text-white text-center animate-bounce">
-        See More <br /><i class="fas fa-chevron-down text-white text-2xl"></i>
-      </h2>
-    </div>
-    <h2 class="text-white text-center text-5xl">ROAD TO DEV.X</h2>
-    <!-- Slides -->
-
-    <div class="sliderAx h-auto mt-24">
-      <div id="slider-1" class="container mx-auto">
-        <div
-          class="bg-cover bg-center h-auto text-white py-24 px-10 object-fill"
-          style="background-image: url(https://astro.build/assets/social.4df01cf6_Z1jhpsT.jpeg)"
-        >
-          <div class="md:w-1/2">
-            <p class="font-bold text-sm uppercase">Services</p>
-            <p class="text-3xl font-bold">Hello world</p>
-            <p class="text-2xl mb-10 leading-none">
-              Carousel with TailwindCSS and jQuery
-            </p>
-            <a
-              href="#"
-              class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
-              >Contact us</a
-            >
-          </div>
-        </div>
-        <!-- container -->
-        <br />
-      </div>
-
-      <div id="slider-2" class="container mx-auto">
-        <div
-          class="bg-cover bg-top h-auto text-white py-24 px-10 object-fill"
-          style="background-image: url(https://mindphp.com/images/react.png)"
-        >
-          <p class="font-bold text-sm uppercase">Services</p>
-          <p class="text-3xl font-bold">Hello world</p>
-          <p class="text-2xl mb-10 leading-none">
-            Carousel with TailwindCSS and jQuery
-          </p>
-          <a
-            href="#"
-            class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
-            >Contact us</a
-          >
-        </div>
-        <!-- container -->
-        <br />
-      </div>
-    </div>
-    <div class="flex justify-between w-12 mx-auto pb-2">
-      <button
-        id="sButton1"
-        onclick="sliderButton1()"
-        class="bg-purple-400 rounded-full w-4 pb-2"></button>
-      <button
-        id="sButton2"
-        onclick="sliderButton2() "
-        class="bg-purple-400 rounded-full w-4 p-2"></button>
-    </div>
-
-    <!-- End Slide -->
-    <div class="text-white text-center py-4">
-      <h2 class="text-3xl font-bold">DEV.X 01</h2>
-      <h2 class="text-3xl font-bold">INTRO TO DEV.X</h2>
-    </div>
-    <div class="pt-5 pb-20">
-      <p class="text-gray-500 text-center">
-        Patricia’s friend who was here hardly had any issues at all, but she
-        wasn’t telling the truth. Yesterday, before she left to go home, she
-        heard that her husband is in the hospital and pretended to be surprised.
-      </p>
-    </div>
-  </div>
-</section>
-<!-- End ROAD TO DEV.X -->
+<!-- components Schedule --> 
+<Schedule/>
 
 <!-- components Category -->
 <Category/>
-
-<!-- <section class="seesion bg-[#171717] w-screen h-auto">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-white text-center text-2xl font-bold pb-10 pt-7">
-          Session Category
-        </h2>
-        <p class="text-gray-500 text-center">
-          one dollar and eighty-seven cents. that was all. and sixty cents of it
-          was in pennies.
-        </p>
-        
-        <div class="card-all mt-5 px-4 pb-7 flex flex-wrap justify-star items-center gap-y-5 sm:gap-x-4">
-          <div class="card-item py-5 px-3 text-white border-2 rounded-3xl w-[300px] h-auto">
-            <h2 class="font-bold pb-3">SESSION CATEGORY 01</h2>
-            <p class="text-gray-500 pb-3">
-              i get a lovely view of the bay and a little private wharf
-              belonging to the estate.
-            </p>
-
-            <div class="link flex items-center text-[#4136F1] font-bold">
-              <a href="#">Documentation</a>
-              <svg
-                class="w-[20px] h-[20px]"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width={1.5}
-                stroke="currentColor"
-                class-Name="w-6 h-6"
-              >
-                <path
-                  stroke-Linecap="round"
-                  stroke-Linejoin="round"
-                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-              </svg>
-            </div>
-          </div>
-
-          <div class="card-item py-5 px-3 text-white border-2 rounded-3xl w-[300px] h-auto">
-            <h2 class="font-bold pb-3">SESSION CATEGORY 01</h2>
-            <p class="text-gray-500 pb-3">
-              i get a lovely view of the bay and a little private wharf
-              belonging to the estate.
-            </p>
-
-            <div class="link flex items-center text-[#4136F1] font-bold">
-              <a href="#">Documentation</a>
-              <svg
-                class="w-[20px] h-[20px]"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width={1.5}
-                stroke="currentColor"
-                class-Name="w-6 h-6"
-              >
-                <path
-                  stroke-Linecap="round"
-                  stroke-Linejoin="round"
-                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-              </svg>
-            </div>
-          </div>
-
-          <div class="card-item py-5 px-3 text-white border-2 rounded-3xl w-[300px] h-auto">
-            <h2 class="font-bold pb-3">SESSION CATEGORY 01</h2>
-            <p class="text-gray-500 pb-3">
-              i get a lovely view of the bay and a little private wharf
-              belonging to the estate.
-            </p>
-
-            <div class="link flex items-center text-[#4136F1] font-bold">
-              <a href="#">Documentation</a>
-              <svg
-                class="w-[20px] h-[20px]"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width={1.5}
-                stroke="currentColor"
-                class-Name="w-6 h-6"
-              >
-                <path
-                  stroke-Linecap="round"
-                  stroke-Linejoin="round"
-                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-              </svg>
-            </div>
-          </div>
-
-          <div class="card-item py-5 px-3 text-white border-2 rounded-3xl w-[300px] h-auto">
-            <h2 class="font-bold pb-3">SESSION CATEGORY 01</h2>
-            <p class="text-gray-500 pb-3">
-              i get a lovely view of the bay and a little private wharf
-              belonging to the estate.
-            </p>
-
-            <div class="link flex items-center text-[#4136F1] font-bold">
-              <a href="#">Documentation</a>
-              <svg
-                class="w-[20px] h-[20px]"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width={1.5}
-                stroke="currentColor"
-                class-Name="w-6 h-6"
-              >
-                <path
-                  stroke-Linecap="round"
-                  stroke-Linejoin="round"
-                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-              </svg>
-            </div>
-          </div>
-
-          <div class="card-item py-5 px-3 text-white border-2 rounded-3xl w-[300px] h-auto">
-            <h2 class="font-bold pb-3">SESSION CATEGORY 01</h2>
-            <p class="text-gray-500 pb-3">
-              i get a lovely view of the bay and a little private wharf
-              belonging to the estate.
-            </p>
-
-            <div class="link flex items-center text-[#4136F1] font-bold">
-              <a href="#">Documentation</a>
-              <svg
-                class="w-[20px] h-[20px]"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width={1.5}
-                stroke="currentColor"
-                class-Name="w-6 h-6"
-              >
-                <path
-                  stroke-Linecap="round"
-                  stroke-Linejoin="round"
-                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-              </svg>
-            </div>
-          </div>
-
-        </div>
-        <h2 class="text-white text-center pb-24">
-          it had taken years to perfect and he could now do it without even
-          putting any <span class="text-[#4136F1] font-semibold"
-            >thought behind it.</span
-          >
-        </h2>
-      </div>
-    </section> -->
-<!-- End Session Category -->
 
 <!-- Start Heard the song -->
 <section class="heard bg-[#000000] w-full h-auto">
@@ -490,8 +231,8 @@ import { Speaker } from "../components/Speaker";
   </div>
 </section>
 
-<footer class="bg-[#171717] w-full h-auto py-14">
-  <div class="max-w-6xl mx-auto px-4">
+<footer class="bg-[#171717] w-2/3 mb-14 mx-auto">
+  <div class="px-6 py-14 mx-auto">
     <div class="md:flex md:items-center">
       <div class="text-center md:w-[60%] md:text-left">
         <h2 class="text-white mb-4 text-lg font-semibold">

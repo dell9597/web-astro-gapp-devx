@@ -14,11 +14,14 @@ export class TagCard extends LitElement {
       height: 174px;
       border-radius: 32px;
       padding: 28px;
+      max-width: 100%;
   }
+
   @media only screen and (max-width: 280px) {
     .card-tag {
       width: 230px;
       padding: 20px;
+      max-width: 100%;
     }
   }
   .tag-topic{
@@ -54,7 +57,7 @@ export class TagCard extends LitElement {
         <label class="tag-topic"><slot name="tagName"></slot></label>
         <p class="tag-description"><slot name="tagDis"></slot></p>
         <div class="cover-doc">
-        <label class="tag-document">See More </label>
+        <label class="tag-document"><slot name="tagSeeMore"></label>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25.242" viewBox="0 0 24 25.242">
             <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(-6 -5.379)">
               <g id="Group_108" data-name="Group 108">

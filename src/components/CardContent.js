@@ -4,10 +4,6 @@ export class CardContent extends LitElement {
   render(){
     return html`
     <style>
-    :host {
-      display: block;
-      background: #000000;
-    }
     ::slotted(img[slot="coverContent"]){
       width: 319px !important;
       height:472px !important;

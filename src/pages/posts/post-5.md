@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'My 5 Blog Post'
+title: 'Ratthasart Hengparsert'
 pubDate: 2022-07-01
 description: "This is the first post of my new Astro blog."
 author: "Astro Learner"

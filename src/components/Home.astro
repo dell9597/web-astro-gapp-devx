@@ -1,6 +1,6 @@
 ---
-import Category from "../pages/tags/Category.astro";
 import { Speaker } from "../components/Speaker";
+import Category from "../pages/tags/Category.astro";
 import Schedule from "./Schedule.astro";
 ---
 <div
@@ -35,45 +35,77 @@ import Schedule from "./Schedule.astro";
 <!-- End DEV.X -->
 
 <!-- Start StoryTeller -->
-<section class="story bg-[#171717] w-full h-auto py-24">
-  <div class="text-center mx-auto">
-    <h2 class="text-[#4136F1] text-3xl md:text-5xl lg:text-7xl font-bold mb-20">
+<section class="story bg-[url('/assets/img/Group911.png')] bg-contain w-full h-auto py-24">
+  <div class="w-3/4 text-center mx-auto px-4">
+    <h2
+      class="text-[#4136F1] text-5xl md:text-7xl font-bold lg:text-8xl mb-20"
+    >
       SPEAKERS
     </h2>
-    <div class="w-full flex justify-center">
-      <div class=" md:grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
-        <div class="md:pr-[16px]pb-10">
-          <Speaker>
-            <img slot="imgSpeaker" src="/assets/img/00.png"/>
-            <label slot="nameSpeaker">Testname</label>
-           <label slot="roleSpeaker">DEV</label>
-          </Speaker>   
-        </div>
-  
-        <div class="md:pr-[16px] pb-10">
-          <Speaker>
-            <img slot="imgSpeaker" src="/assets/img/00.png"/>
-            <label slot="nameSpeaker">Testname</label>
-           <label slot="roleSpeaker">DEV</label>
-          </Speaker>   
-        </div>
-  
-        <div class="md:pr-[16px]] pb-10">
-          <Speaker>
-            <img slot="imgSpeaker" src="/assets/img/01.png"/>
-            <label slot="nameSpeaker">Testname</label>
-           <label slot="roleSpeaker">DEV</label>
-          </Speaker>   
-        </div>
-  
-        <div class="md:pr-[16px] pb-10">
-          <Speaker>
-            <img slot="imgSpeaker" src="/assets/img/02.png"/>
-            <label slot="nameSpeaker">Testname</label>
-           <label slot="roleSpeaker">DEV</label>
-          </Speaker>   
-        </div>
+
+    <div class="w-full md:grid grid-cols-4">
+      <!-- <div class="person1 px-2 pb-10">
+        <img src="/assets/img/00.png" alt="person1" class="w-[210px] h-[330px] md:w-[332px] md:h-[440px] rounded-[160px] pb-4" />
+        <h2 class="text-white font-medium text-center">AMELIA CHAMBEL</h2>
+        <p class="text-gray-500 text-center">Front End Developer</p>
+      </div> -->
+
+      <div class="person2 px-2 pb-10">
+        <Speaker>
+          <img slot="imgSpeaker" src="./assets/img/Rectangle 17027.png"/>
+          <label slot="nameSpeaker">Chayut</label>
+         <label slot="roleSpeaker">CTO Developer</label>
+        </Speaker>   
       </div>
+
+      <div class="person2 px-2 pb-10">
+        <Speaker>
+          <img slot="imgSpeaker" src="../assets/img/Rectangle 170266.png"/>
+          <label slot="nameSpeaker">Titikorn & Theerapat</label>
+         <label slot="roleSpeaker">Fonts-end Designer & Trainee Dev</label>
+        </Speaker>   
+      </div>
+
+      <div class="person2 px-2 pb-10">
+        <Speaker>
+          <img slot="imgSpeaker" src="/assets/img/Rectangle 17023.png"/>
+          <label slot="nameSpeaker">Metee</label>
+         <label slot="roleSpeaker">Back-end Developer</label>
+        </Speaker>   
+      </div>
+
+      <div class="person2 px-2 pb-10">
+        <Speaker>
+          <img slot="imgSpeaker" src="../assets/img/Rectangle 17025.png"/>
+          <label slot="nameSpeaker">Karnchit</label>
+         <label slot="roleSpeaker">Back-end Developer</label>
+        </Speaker>   
+      </div>
+      <div class="person2 px-2 pb-10">
+        <Speaker>
+          <img slot="imgSpeaker" src="../assets/img/Rectangle 17025.png"/>
+          <label slot="nameSpeaker">Karnchit</label>
+         <label slot="roleSpeaker">Back-end Developer</label>
+        </Speaker>   
+      </div>
+
+      <!-- <div class="person2 px-2 pb-10">
+        <img src="/assets/img/01.png" alt="person1" class="w-[210px] h-[330px] md:w-[332px] md:h-[440px] rounded-[160px] pb-4" />
+        <h2 class="text-white font-medium text-center">AMELIA CHAMBEL</h2>
+        <p class="text-gray-500 text-center">Front End Developer</p>
+      </div>
+
+      <div class="person2 px-2 pb-10">
+        <img src="/assets/img/02.png" alt="person1" class="w-[210px] h-[330px] md:w-[332px] md:h-[440px] rounded-[160px] pb-4" />
+        <h2 class="text-white font-medium text-center">AMELIA CHAMBEL</h2>
+        <p class="text-gray-500 text-center">Front End Developer</p>
+      </div>
+
+      <div class="person2 px-2 pb-10">
+        <img src="/assets/img/03.png" alt="person1" class="w-[210px] h-[330px] md:w-[332px] md:h-[440px] rounded-[160px] pb-4" />
+        <h2 class="text-white font-medium text-center">AMELIA CHAMBEL</h2>
+        <p class="text-gray-500 text-center">Front End Developer</p>
+      </div> -->
     </div>
   </div>
 </section>
@@ -89,7 +121,7 @@ import Schedule from "./Schedule.astro";
     <h2
       class="text-[#4136F1] text-5xl text-center md:text-7xl font-bold lg:text-8xl mb-6"
     >
-      POST
+    Article
     </h2>
   </div>
 </section>
@@ -205,8 +237,8 @@ import Schedule from "./Schedule.astro";
             <h2 class="title pt-8 text-2xl pl-5">JAVA SCRIPT AND SOUND ETC</h2>
             <div>
               <p class="pb-8 text-center">
-                Patricia’s friend who was here hardly had any issues at all, but
-                she wasn’t telling the truth. Yesterday, before she left to go
+                Patricias friend who was here hardly had any issues at all, but
+                she wasnt telling the truth. Yesterday, before she left to go
                 home, she heard that her husband is in the hospital and
                 pretended to be surprised.
               </p>
@@ -236,7 +268,7 @@ import Schedule from "./Schedule.astro";
     <div class="md:flex md:items-center">
       <div class="text-center md:w-[60%] md:text-left">
         <h2 class="text-white mb-4 text-lg font-semibold">
-          THAT WASN’T TO SAY THAT HE HADN’T DISAPPOINTED OTHERS.
+          THAT WASNT TO SAY THAT HE HADNT DISAPPOINTED OTHERS.
         </h2>
         <p class="text-white">
           the fact was that he had disappointed a lot of people who were close

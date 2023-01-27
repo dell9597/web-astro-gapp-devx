@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'My 4 Blog Post'
+title: 'Karnchit Precha'
 pubDate: 2022-07-01
 description: "This is the first post of my new Astro blog."
 author: "Astro Learner"

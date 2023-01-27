@@ -4,10 +4,7 @@ export class Speaker extends LitElement {
   render(){
     return html`
     <style>
-    :host {
-      display: block;
-      background: #171717;
-    }
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     ::slotted(img){
       width: 100%;
       height:513px !important;
@@ -39,20 +36,23 @@ export class Speaker extends LitElement {
 
   .speaker-name{
       text-align: left;
-      font: bold 30px Brandon Grotesque;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 28px;
       color: #FFFFFF;
       text-transform: uppercase;
   }
   .speaker-role{
       text-align: center;
-      font: normal 16px Brandon Grotesque;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
       color: #FFFFFF;
       text-transform: capitalize;
       opacity: 0.5;
       margin-top: 8px;
   }
     </style>
-
+    
     <div class="speaker-home">
       <div class="img-speaker-home">
         <slot name="imgSpeaker"></slot>

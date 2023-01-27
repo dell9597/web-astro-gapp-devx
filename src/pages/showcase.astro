@@ -44,8 +44,8 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
         </div>
       </div>
     <div class="w-full flex justify-center bg-[#000000]">
-        <ul class="w-full md:w-3/4 md:grid grid-cols-4 px-2 pt-16">
-            {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+        <ul class="max-w-7xl md:grid md:grid-cols-2 lg:grid-cols-4 pt-16">
+            {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} author={post.frontmatter.author}/>)}
          </ul>
     </div>
 </Layout>

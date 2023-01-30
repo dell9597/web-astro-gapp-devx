@@ -27,37 +27,37 @@ const { posts } = Astro.props;
 ---
 
 <Layout pageTitle={tag}>
-<!-- components Showcase-tags --> 
-<div class="w-full bg-[#171717] pt-[110px] pb-[70px]">
-  <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-white text-3xl text-center md:text-4xl font-bold mb-6">
-      Showcase
-    </h2>
-    <p class="text-white text-center pr-4 sm:pr-0">
-      They decided to find the end of the rainbow.
-    </p>
-    <div class="cate pt-10 mx-auto pr-4 sm:pr-0">
-      <ul class="text-center gap-y-2.5 grid grid-cols-2 items-center justify-center md:grid-cols-3 lg:grid-cols-6">   
-          {
-              tags.map((tag) => (
-                <div class="text-white uppercase py-2 px-6 rounded-lg hover:bg-[#4136F1]">
-                  <a href={`${tag}`}>{tag}</a>
-                </div> 
-              ))
-            }
-      </ul>
+  <!-- components Showcase-tags --> 
+  <div class="w-full bg-[#171717] pt-[110px] pb-[70px]">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-white text-3xl text-center md:text-4xl font-bold mb-6">
+        {tag}
+      </h2>
+      <p class="text-white text-center pr-4 sm:pr-0">
+        They decided to find the end of the rainbow.
+      </p>
+      <div class="cate pt-10 mx-auto pr-4 sm:pr-0">
+        <ul class="text-center gap-y-2.5 grid grid-cols-2 items-center justify-center md:grid-cols-3 lg:grid-cols-6">   
+            {
+                tags.map((tag) => (
+                  <div>
+                    <a class="text-white uppercase py-2 px-6 rounded-lg hover:bg-[#4136F1] active:bg-[#4136F1] focus:outline-none focus:ring focus:bg-[#4136F1]" href={`${tag}`}>{tag}</a>
+                  </div> 
+                ))
+              }
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- components Headers-BlogPost --> 
-<div class="w-full flex justify-center bg-[#000000]">
-  <ul class="w-full max-w-7xl md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-16">
-    {
-      posts.map((post) => (
-        <BlogPost url={post.url} title={post.frontmatter.title} img={post.frontmatter.img} speakerimg={post.frontmatter.speakerimg} author={post.frontmatter.author}/>
-      ))
-    }   
-  </ul>
-</div>
+  <!-- components Headers-BlogPost --> 
+  <div class="w-full flex justify-center bg-[#000000]">
+    <ul class="w-full max-w-7xl md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-16">
+      {
+        posts.map((post) => (
+          <BlogPost url={post.url} title={post.frontmatter.title} img={post.frontmatter.img} speakerimg={post.frontmatter.speakerimg} author={post.frontmatter.author}/>
+        ))
+      }   
+    </ul>
+  </div>
 </Layout>

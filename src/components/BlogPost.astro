@@ -6,7 +6,7 @@ const { title, url, author, img, speakerimg } = Astro.props;
 <!-- Topic-Showcase --> 
 <div class="pb-[72px] w-full flex justify-center px-2 bg-[#000000]">
   <CardContent>
-    <img slot="coverContent" src={img}/>
+    <img slot="coverContent" src={img} />
     <p slot="nameContent"><a href={url}>{author}</a></p>
     <img slot="imgSpeaker" src={speakerimg}/>
     <label slot="nameSpeaker"><a href={url}>{title}</a></label>

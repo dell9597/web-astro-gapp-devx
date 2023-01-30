@@ -1,7 +1,7 @@
 ---
 import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
-const { title, url, } = Astro.props;
+const { tags } = Astro.props;
 ---
 
 <Layout pageTitle={frontmatter.title}>
@@ -13,7 +13,7 @@ const { title, url, } = Astro.props;
       <div class="max-w-6xl mx-auto px-4 flex flex-col justify-center md:flex-row pt-64 ">
         <div class="left">
           <div class="md:pt-24">
-            <img class="w-[300px] h-[300px] bg-cover" src={frontmatter.image.url} alt={frontmatter.image.alt} />
+            <img class="w-[300px] h-[300px] bg-cover" src="/assets/img/Rectangle 17023.png" />
           </div>
         </div>
         <div>
@@ -54,7 +54,7 @@ const { title, url, } = Astro.props;
               </div>
               <ul class="flex flex-wrap gap-2 pt-2">
                 <li class="text-white inline border rounded-md py-1 px-4">
-                  <a href={url}>{title}</a>
+                  <p class="text-gray-500">{frontmatter.tags}</p>
                 </li>
               </ul>
             </div>

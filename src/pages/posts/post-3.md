@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: Metee Pipatjariya
 author: Astro Learner
 description: "I had some challenges, but asking in the community really helped!"
+img: "/assets/img/Rectangle 17025.png"
 image:
   url: "https://astro.build/assets/blog/community-day/cover.jpg"
   alt: "The word community with a heart."

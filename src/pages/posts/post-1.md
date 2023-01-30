@@ -3,7 +3,9 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Cahyut Janthapat'
 pubDate: 2022-07-01
 description: "This is the first post of my new Astro blog."
-author: "Astro Learner"
+author: "AstrofdfLearner"
+img: "/assets/img/Rectangle 17025.png"
+speakerimg: "/assets/img/Rectangle 17025.png"
 time: 40 mins
 image:
   url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"

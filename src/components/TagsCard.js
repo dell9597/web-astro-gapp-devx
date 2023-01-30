@@ -4,10 +4,6 @@ export class TagCard extends LitElement {
   render(){
     return html`
     <style>
-    :host {
-      display: block;
-      background: #171717;
-    }
     .card-tag{
       border: 1px solid #777777;
       width: 303px;

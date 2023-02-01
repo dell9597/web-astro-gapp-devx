@@ -1,19 +1,21 @@
 ---
 import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
-const { tags } = Astro.props;
+const { title, url, author, img, speakerimg } = Astro.props;
+const allPosts = await Astro.glob("../pages/posts/*.md");
+const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
 ---
 
 <Layout pageTitle={frontmatter.title}>
-  <section class="bg-[url('/assets/img/Hero.png')] bg-no-repeat bg-cover h-auto pb-14">
+  <section class="bg-[#171717] opacity-100 bg-no-repeat bg-cover h-auto pb-14">
     <div class="absolute w-full top-[71px]">
-      <img class="h-[350px] md:h-[450px] w-full bg-cover" src={frontmatter.image.url} alt={frontmatter.image.alt} />
+      <img class="h-[350px] md:h-[450px] w-full bg-cover object-cover" src={frontmatter.image.url} alt={frontmatter.image.alt} />
     </div>
     <div class="poster relative flex flex-col justify-center">
       <div class="max-w-6xl mx-auto px-4 flex flex-col justify-center md:flex-row pt-64 ">
         <div class="left">
           <div class="md:pt-24">
-            <img class="w-[300px] h-[300px] bg-cover" src="/assets/img/Rectangle 17023.png" />
+            <img class="w-[300px] h-[300px] bg-cover object-cover" src={frontmatter.img} />
           </div>
         </div>
         <div>
@@ -23,33 +25,33 @@ const { tags } = Astro.props;
               <slot />
             </p>
           </div>
-          <div class="px-4 pt-4">
+          <div class="px-4 pt-4  text-xs md:text-sm">
             <div class="flex items-center">
-              <div class="md:w-[135px]">
+              <div class="w-[135px]">
                 <h1 class="text-white">RELEASE DATE</h1>
               </div>
               <p class="text-gray-500">{frontmatter.pubDate.slice(0, 10)}</p>
             </div>
             <div class="flex items-center pt-2">
-              <div class="md:w-[135px]">
+              <div class="w-[135px]">
                 <h1 class="text-white">RUNNING TIME</h1>
               </div>
               <p class="text-gray-500">{frontmatter.time}</p>
             </div>
             <div class="flex items-center pt-2">
-              <div class="md:w-[135px]">
+              <div class="w-[135px]">
                 <h1 class="text-white">DIRECTOR</h1>
               </div>
               <p class="text-gray-500">trainee Chart</p>
             </div>
             <div class="flex items-center pt-2">
-              <div class="md:w-[135px]">
+              <div class="w-[135px]">
                 <h1 class="text-white">Build by</h1>
               </div>
               <p class="text-gray-500">Trainee Chart</p>
             </div>
             <div class="flex items-end pt-2">
-              <div class="md:w-[135px]">
+              <div class="w-[135px]">
                 <h1 class="text-white">CATEGORY</h1>
               </div>
               <ul class="flex flex-wrap gap-2 pt-2">

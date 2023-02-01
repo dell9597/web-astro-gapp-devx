@@ -28,15 +28,16 @@ export class Speaker extends LitElement {
     filter: grayscale(0%);
   }
 
-  @media only screen and (max-width: 280px) {
+  @media only screen and (max-width: 360px) {
     .img-speaker-home {
-      width: 245px;
+      width: 300px;
       max-width: 100%;
+      margin: 0px;
     }
   }
 
   .speaker-name{
-      text-align: left;
+      text-align: center;
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
       font-size: 28px;

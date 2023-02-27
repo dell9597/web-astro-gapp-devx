@@ -3,15 +3,40 @@ import { Speaker } from "../components/Speaker";
 import Category from "../pages/tags/Category.astro";
 import Schedule from "./Schedule.astro";
 ---
-<div class="flex justify-center w-full h-auto bg-no-repeat bg-cover relative md:h-[65vh] lg:h-[95vh]">
+
+<section class="bg-[url('/assets/img/Hero.png')]">
+  <div class="px-[3%] lg:px-[19%] h-full w-full min-h-screen relative grid grid-cols-1 gap-1 lg:grid-cols-2 lg:gap-2 items-center">
+    <div>
+        <img class="w-[300px] lg:w-[500px]" src="/assets/img/logo.png" alt=""/>
+        <p class="md:w-full text-white text-sm md:text-xl font-Montserrat">
+          You could see it in the clothes she
+          <span class="text-[#4136F1] font-bold">wore that color</span> was an important
+          part of her overall style.
+        </p>
+    </div>
+
+    <div class="w-full">
+        <img class="xl:max-w-4xl lg:max-w-[500px]" src="/assets/img/Image 282.png" alt="" />
+    </div>   
+  </div>
+
+  <div class="flex justify-center pb-16">
+    <button class="mx-auto block bg-gradient-to-r from-[#8743FF] to-[#4136F1] px-10 py-2 md:px-20 md:py-4 rounded-3xl">
+      <a href="#" class="text-white">Get Start</a>
+    </button>
+  </div>
+</section>
+
+
+<!-- <div class="flex justify-center w-full h-auto bg-no-repeat bg-cover relative md:h-[65vh] lg:h-[95vh]">
   <div class="bg-[url('/assets/img/Hero.png')] opacity-50 absolute inset-0 h-full w-full"></div>
   <section class="hero max-w-6xl mx-auto px-4 relative">
     <div class="flex pt-0 md:pt-24">
       <div class="left text-white md:w-3/6 md:mt-12 lg:mt-20 pb-20">
-        <div class="text-7xl py-4 md:text-9xl text-center lg:text-left">
+        <div class="py-4">
           <img src="/assets/img/logo.png" alt=""/>
         </div>
-        <p class="md:w-full md:text-lg lg:w-5/6 pb-14">
+        <p class="md:w-full text-xl pb-14 font-Montserrat">
           You could see it in the clothes she
           <span class="text-[#4136F1] font-bold">wore that color</span> was an important
           part of her overall style.
@@ -30,17 +55,14 @@ import Schedule from "./Schedule.astro";
       </button>
     </div>
   </div>
-  
-  
-
-</div>
+</div> -->
 
 <!-- End DEV.X -->
 
 <!-- Start StoryTeller -->
-<section class="story bg-contain w-fullh-auto opacity-100 bg-[url('/assets/img/Group911.png')] ">
+<section class="story bg-contain w-fullh-auto opacity-100 bg-[url('/assets/img/Group99.png')] ">
   <div class="text-center w-full">
-    <h2 class="text-[#4136F1] text-5xl md:text-7xl font-bold lg:text-9xl mb-20">
+    <h2 class="text-[#4136F1] text-4xl md:text-7xl font-bold lg:text-9xl pb-20 pt-10 md:pt-0 font-Audiowide">
       SPEAKERS
     </h2>
 
@@ -97,6 +119,10 @@ import Schedule from "./Schedule.astro";
 
 <!-- components Category -->
 <Category/>
+
+
+
+
 
 <!-- Start Heard the song -->
 <!-- <section class="heard bg-[#000000] w-full h-auto">
@@ -236,7 +262,7 @@ import Schedule from "./Schedule.astro";
 </section> -->
 
 <footer class="bg-[#171717] w-full my-20">
-  <div class="px-6 py-14 w-2/3 mx-auto">
+  <div class="px-6 py-14 w-2/3 mx-auto font-Montserrat">
     <div class="md:flex md:items-center">
       <div class="text-center md:w-[60%] md:text-left">
         <h2 class="text-white mb-4 text-lg font-semibold">
@@ -322,69 +348,3 @@ import Schedule from "./Schedule.astro";
     transform: translateY(0) translateZ(0);
   }
 </style>
-<!-- <script>
-    // Open & Close menu mobile
-    const btn = document.querySelector("button.mobile-menu-button");
-    const menu = document.querySelector(".mobile-menu");
-
-    btn?.addEventListener("click", () => {
-      menu?.classList.toggle("hidden");
-    });
-
-    var cont = 0;
-    function loopSlider() {
-      var xx = setInterval(function () {
-        switch (cont) {
-          case 0: {
-            $("#slider-1").fadeOut(400);
-            $("#slider-2").delay(400).fadeIn(400);
-            $("#sButton1").removeClass("bg-purple-800");
-            $("#sButton2").addClass("bg-purple-800");
-            cont = 1;
-
-            break;
-          }
-          case 1: {
-            $("#slider-2").fadeOut(400);
-            $("#slider-1").delay(400).fadeIn(400);
-            $("#sButton2").removeClass("bg-purple-800");
-            $("#sButton1").addClass("bg-purple-800");
-
-            cont = 0;
-
-            break;
-          }
-        }
-      }, 8000);
-    }
-
-    function reinitLoop(time: any) {
-      clearInterval(xx);
-      setTimeout(loopSlider(), time);
-    }
-
-    function sliderButton1() {
-      $("#slider-2").fadeOut(400);
-      $("#slider-1").delay(400).fadeIn(400);
-      $("#sButton2").removeClass("bg-purple-800");
-      $("#sButton1").addClass("bg-purple-800");
-      reinitLoop(4000);
-      cont = 0;
-    }
-
-    function sliderButton2() {
-      $("#slider-1").fadeOut(400);
-      $("#slider-2").delay(400).fadeIn(400);
-      $("#sButton1").removeClass("bg-purple-800");
-      $("#sButton2").addClass("bg-purple-800");
-      reinitLoop(4000);
-      cont = 1;
-    }
-
-    $(window).ready(function () {
-      $("#slider-2").hide();
-      $("#sButton1").addClass("bg-purple-800");
-
-      loopSlider();
-    });
-  </script> -->

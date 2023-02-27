@@ -34,7 +34,6 @@ setInterval(updateCountDownTime,1000);
     <h1>DO YOU WANT TO DO THIS</h1>
   <h2 class="sub-head">COMING SOON</h2>
   <div id="countdown" class="countdown">
-
     <div class="time">
       <h2 id="days">00</h2>
       <label>DAYS</label>
@@ -51,7 +50,6 @@ setInterval(updateCountDownTime,1000);
       <h2 id="seconds">00</h2>
       <label>SECONDS</label>
     </div>
-
   </div>
   </section>
 </div>
@@ -66,7 +64,7 @@ setInterval(updateCountDownTime,1000);
   font-family: "Quicksand",sans-serif;
 }
 .countdown-cover{
-  background-image: url(/assets/img/galax-4.png);
+  background-image: url(/assets/img/bryan-goff-f7YQo-eYHdM-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -89,37 +87,40 @@ setInterval(updateCountDownTime,1000);
 
 h1{
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 100px var(--unnamed-font-family-brandon-grotesque);
-  font-size: 64px;
+  font-size: clamp(22px, 3vw, 64px);
   color: #FFFFFF;
   margin: 0 0 16px 0;
 }
 .sub-head{
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 32px/46px var(--unnamed-font-family-brandon-grotesque);
-  font-size: 24px;
+  font-size: clamp(18px, 3vw, 28px);
   letter-spacing: 6.4px;
   color: #8042FB;
+  padding: 10px 0 24px 0;
 }
 label{
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 32px/46px var(--unnamed-font-family-brandon-grotesque);
-  font-size: 16px;
+  font-size: clamp(14px, 2.5vw, 16px);
   color: #8042FB;
 }
 .countdown{
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: auto;
 }
 .time{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  margin: 14px;
-  width: 128px;
+  padding: 2px;
 }
 
 .time h2{
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 32px/46px var(--unnamed-font-family-brandon-grotesque);
   color: #FFFFFF;
-  font-size: 24px;
+  font-size: clamp(18px, 2.5vw, 24px);
 }
 .section-countdown{
   display: flex;

@@ -7,10 +7,18 @@ export class TagCard extends LitElement {
     .card-tag{
       border: 1px solid #777777;
       width: 303px;
-      height: 174px;
+      height: auto;
       border-radius: 32px;
       padding: 28px;
       max-width: 100%;
+  }
+
+  @media only screen and (max-width: 400px) {
+    .card-tag {
+      width: 245px;
+      padding: 20px;
+      max-width: 100%;
+    }
   }
 
   @media only screen and (max-width: 280px) {

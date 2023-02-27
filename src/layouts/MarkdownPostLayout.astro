@@ -1,9 +1,15 @@
 ---
 import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
-const { title, url, author, img, speakerimg } = Astro.props;
-const allPosts = await Astro.glob("../pages/posts/*.md");
-const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+import BlogPost from "../components/BlogPost.astro";
+const posts = await Astro.glob("../pages/posts/*.md");
+
+// const allPosts = await Astro.glob("../pages/posts/*.md");
+// const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+
+// const { title, url, author, img, speakerimg } = Astro.props;
+// const allPosts = await Astro.glob("../pages/posts/*.md");
+// const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
 ---
 
 <Layout pageTitle={frontmatter.title}>
@@ -56,7 +62,14 @@ const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
               </div>
               <ul class="flex flex-wrap gap-2 pt-2">
                 <li class="text-white inline border rounded-md py-1 px-4">
-                  <p class="text-gray-500">{frontmatter.tags}</p>
+                  <!-- {allPosts.map((post) => <BlogPost title={post.frontmatter.title} />)} -->
+                  <p class="text-gray-500">{`${frontmatter.tags}`}</p>
+                  <!-- {
+                    posts.map(post => (
+                      <a class="text-gray-500" href={post.url}>{post.frontmatter.tags}</a>
+                    ))
+                      
+                  } -->
                 </li>
               </ul>
             </div>

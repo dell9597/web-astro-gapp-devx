@@ -5,7 +5,12 @@ module.exports = {
 		"./node_modules/flowbite/**/*.js"
 	],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				Montserrat: "'Montserrat', sans-serif",
+				Audiowide: "'Audiowide', cursive",
+			},
+		},
 	},
 	variants: {
 		extend: {

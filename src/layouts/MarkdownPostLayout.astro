@@ -26,7 +26,7 @@ const posts = await Astro.glob("../pages/posts/*.md");
         </div>
         <div>
           <div class="px-4 pt-10 md:pt-72 text-gray-500">
-            <h2 class="text-3xl pb-4 text-white text-star">Python</h2>
+            <h2 class="text-3xl pb-4 text-white text-star">{frontmatter.author}</h2>
             <p>
               <slot />
             </p>

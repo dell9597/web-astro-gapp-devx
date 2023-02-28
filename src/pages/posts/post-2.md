@@ -3,7 +3,8 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: Titikorn & Theerapat
 author: Astro Learner
 description: "After learning some Astro, I couldn't stop!"
-img: "/assets/img/Rectangle 170266.png"
+img: "./assets/img/Rectangle 170266.png"
+speakerimg: "./assets/img/Rectangle 170266.png"
 image:
   url: "https://astro.build/assets/blog/astro-showcase/astro-showcase-screenshot.jpg"
   alt: "Thumbnails of websites from the Astro Showcase site."

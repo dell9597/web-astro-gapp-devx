@@ -1,18 +1,11 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Titikorn & Theerapat
-<<<<<<< HEAD
-author: Astro Learner
-description: "After learning some Astro, I couldn't stop!"
-img: "./assets/img/Rectangle 170266.png"
-speakerimg: "./assets/img/Rectangle 170266.png"
-=======
 author: jamstack innovation found
 description: "I had some challenges, but asking in the community really helped!"
 img: "/assets/img/jam.jpeg"
 speakerimg: "/assets/img/Rectangle 170266.png"
 time: 45 mins
->>>>>>> 3b53b297d5faa1a19d71e12612c6058887178e2e
 image:
   url: "https://help.figma.com/hc/article_attachments/4764342391447/GIF_1_MOVE_2x.gif"
   alt: "The word community with a heart."

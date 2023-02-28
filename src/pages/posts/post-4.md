@@ -1,14 +1,5 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-<<<<<<< HEAD
-title: 'Cahyut Janthapat'
-pubDate: 2022-07-01
-description: "This is the first post of my new Astro blog."
-author: "AstrofdfLearner"
-img: "./assets/img/Rectangle 17025.png"
-speakerimg: "./assets/img/Rectangle 17025.png"
-time: 40 mins
-=======
 title: 'Karnchit Precha'
 pubDate: 2023-03-09
 description: "This is the first post of my new Astro blog."
@@ -16,7 +7,6 @@ author: "GraphQL"
 img: "/assets/img/ql.png"
 speakerimg: "/assets/img/Rectangle 17025.png"
 time: 45 mins
->>>>>>> 3b53b297d5faa1a19d71e12612c6058887178e2e
 image:
   url: "https://cdn.hackersandslackers.com/2020/11/graphql.jpg"
   alt: "The Astro logo with the word One."

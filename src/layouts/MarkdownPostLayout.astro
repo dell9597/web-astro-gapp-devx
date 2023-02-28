@@ -48,13 +48,13 @@ const posts = await Astro.glob("../pages/posts/*.md");
               <div class="w-[135px]">
                 <h1 class="text-white">DIRECTOR</h1>
               </div>
-              <p class="text-gray-500">trainee Chart</p>
+              <p class="text-gray-500" >{frontmatter.director}</p>
             </div>
             <div class="flex items-center pt-2">
               <div class="w-[135px]">
                 <h1 class="text-white">Build by</h1>
               </div>
-              <p class="text-gray-500">Trainee Chart</p>
+              <p class="text-gray-500">{frontmatter.build}</p>
             </div>
             <div class="flex items-end pt-2">
               <div class="w-[135px]">

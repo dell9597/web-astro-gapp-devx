@@ -3,17 +3,24 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Cahyut Janthapat'
 pubDate: 2022-07-01
 description: "This is the first post of my new Astro blog."
-author: "AstrofdfLearner"
-img: "/assets/img/Rectangle 17025.png"
-speakerimg: "/assets/img/Rectangle 17025.png"
-time: 40 mins
+author: "First Step to Data Visualization"
+img: "/assets/img/Data_v.png"
+speakerimg: "/assets/img/Rectangle 17027.png"
+time: 60 mins
 image:
   url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
   alt: "The Astro logo with the word One."
 tags: ["astro", "blogging", "learning in public"]
+build: Cahyut Janthapat
+director: Cahyut Janthapat
 ---
 
-# My First Blog Post
+# Overview
+Data visualization is the representation of data through use of common graphics, such as charts, plots, infographics, and even animations. These visual displays of information communicate complex data relationships and data-driven insights in a way that is easy to understand.
+
+test
+
+<!-- # My First Blog Post
 
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 
@@ -28,4 +35,4 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 
 ## What's next
 
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come. -->

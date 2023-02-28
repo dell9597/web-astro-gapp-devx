@@ -1,29 +1,20 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Ratthasart Hengparsert'
-pubDate: 2022-07-01
+pubDate: 2023-03-09
 description: "This is the first post of my new Astro blog."
-author: "Astro Learner"
+author: "Dynamo Transaction"
+img: "/assets/img/DNM.png"
+speakerimg: "/assets/img/spk_tar.png"
+time: 45 mins
 image:
-  url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
+  url: "https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/DynamoDB-Cheatsheet.png"
   alt: "The Astro logo with the word One."
 tags: ["astro", "blogging", "learning in public"]
+build: Ratthasart Hengparsert
+director: Ratthasart Hengparsert
 ---
 
-# My First Blog Post
+# Overview
 
-Published on: 2022-07-01
-
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
-
-## What I've accomplished
-
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
-
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
-
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
-
-## What's next
-
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+DynamoDB performs two underlying reads or writes of every item in the transaction: one to prepare the transaction and one to commit the transaction. The two underlying read/write operations are visible in your Amazon CloudWatch metrics.

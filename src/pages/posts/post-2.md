@@ -1,15 +1,29 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Titikorn & Theerapat
+<<<<<<< HEAD
 author: Astro Learner
 description: "After learning some Astro, I couldn't stop!"
 img: "./assets/img/Rectangle 170266.png"
 speakerimg: "./assets/img/Rectangle 170266.png"
+=======
+author: jamstack innovation found
+description: "I had some challenges, but asking in the community really helped!"
+img: "/assets/img/jam.jpeg"
+speakerimg: "/assets/img/Rectangle 170266.png"
+time: 45 mins
+>>>>>>> 3b53b297d5faa1a19d71e12612c6058887178e2e
 image:
-  url: "https://astro.build/assets/blog/astro-showcase/astro-showcase-screenshot.jpg"
-  alt: "Thumbnails of websites from the Astro Showcase site."
-pubDate: 2022-07-08
-tags: ["astro", "blogging", "learning in public", "successes"]
+  url: "https://help.figma.com/hc/article_attachments/4764342391447/GIF_1_MOVE_2x.gif"
+  alt: "The word community with a heart."
+pubDate: 2023-03-09
+tags: ["astro", "learning in public", "setbacks", "community"]
+build: Titikorn & Theerapat
+director: Titikorn & Theerapat
 ---
 
-After a successful first week learning Astro, I decided to try some more. I wrote and imported a small component from memory!
+# What Is JAMstack ?
+
+Jamstack is an architectural approach that decouples the web experience layer from data and business logic, improving flexibility, scalability, performance, and maintainability.
+Jamstack removes the need for business logic to dictate the web experience.
+It enables a composable architecture for the web where custom logic and 3rd party services are consumed through APIs.

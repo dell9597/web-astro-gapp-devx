@@ -28,7 +28,7 @@ const { posts } = Astro.props;
 
 <Layout pageTitle={tag}>
   <!-- components Showcase-tags --> 
-  <div class="w-full bg-[#171717] pt-[110px] pb-[70px]">
+  <div class="w-full bg-[#171717] pt-[110px] pb-[40px] md:pb-[70px]">
     <div class="max-w-7xl mx-auto px-4">
       <h2 class="text-white uppercase text-3xl text-center md:text-4xl font-bold mb-6">
         {tag}
@@ -41,7 +41,7 @@ const { posts } = Astro.props;
             {
                 tags.map((tag) => (
                   <div>
-                    <a class="text-white uppercase py-2 px-6 rounded-lg hover:bg-[#4136F1] active:bg-[#4136F1] focus:outline-none focus:ring focus:bg-[#4136F1]" href={`${tag}`}>{tag}</a>
+                    <a class="text-white uppercase py-2 px-3 rounded-lg hover:bg-[#4136F1] active:bg-[#4136F1] focus:outline-none focus:ring focus:bg-[#4136F1]" href={`${tag}`}>{tag}</a>
                   </div> 
                 ))
               }

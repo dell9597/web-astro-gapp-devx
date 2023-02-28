@@ -28,9 +28,9 @@ export class Speaker extends LitElement {
     filter: grayscale(0%);
   }
 
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 400px) {
     .img-speaker-home {
-      width: 300px;
+      width: 278px;
       max-width: 100%;
       margin: 0px;
     }

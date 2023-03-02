@@ -1,19 +1,19 @@
 ---
 import { CardContent } from "../components/CardContent";
-import { Debug } from "astro/components"
-console.log('----log: BlogPost.astro----')
+import { Debug } from "astro/components";
+console.log("----log: BlogPost.astro----");
 
 const { frontmatter } = Astro.props;
 const { title, url, author, img, speakerimg } = Astro.props;
-console.log(img)
+console.log(img);
 ---
 
-<!-- Topic-Showcase --> 
+<!-- Topic-Showcase -->
 <div class="pb-[72px] w-full flex justify-center px-2 bg-[#000000]">
-  <CardContent>
-    <img slot="coverContent" src={img} />
-    <p slot="nameContent"><a href={url}>{author}</a></p>
-    <img slot="imgSpeaker" src={speakerimg}/>
-    <label slot="nameSpeaker"><a href={url}>{title}</a></label>
-  </CardContent>
+	<CardContent>
+		<img slot="coverContent" src={img} />
+		<p slot="nameContent"><a href={url}>{author}</a></p>
+		<img slot="imgSpeaker" src={speakerimg} />
+		<label slot="nameSpeaker"><a href={url}>{title}</a></label>
+	</CardContent>
 </div>

@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Home from "../components/Home.astro";
 import Countdown from "../components/Countdown.astro";
+import test from '../assets/img/coverContent/test.jpg';
+
 const pageTitle ="DEV.X";
 ---
 
@@ -9,6 +11,9 @@ const pageTitle ="DEV.X";
     <Countdown></Countdown>
     <Home></Home>  
     <div>
-        <img src="/assets/img/coverContent/maxim-berg-kE8-rUKjtQU-unsplash.jpg" />
+        <p style="color: red;">Local image stored at src/</p>
+        <img src={test} />
+        <p style="color: red;">Local image stored at public/</p>
+        <img src="/assets/img/coverContent/test.jpg" />
     </div>
 </Layout>

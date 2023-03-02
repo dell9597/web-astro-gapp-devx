@@ -1,14 +1,14 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Cahyut Janthapat'
+title: 'Dome Jantaphat'
 pubDate: 2022-07-01
 description: "This is the first post of my new Astro blog."
 author: "First Step to Data Visualization"
-img: "/assets/img/coverContent/maxim-berg-kE8-rUKjtQU-unsplash.jpg"
+img: "https://gapp-devx.s3.ap-southeast-1.amazonaws.com/assets/img/maxim-berg-kE8-rUKjtQU-unsplash.jpg"
 speakerimg: "./assets/img/Rectangle 17027.png"
 time: 60 mins
 image:
-  url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
+  url: "https://gapp-devx.s3.ap-southeast-1.amazonaws.com/assets/img/maxim-berg-kE8-rUKjtQU-unsplash.jpg"
   alt: "The Astro logo with the word One."
 tags: ["astro", "blogging", "learning in public"]
 build: Cahyut Janthapat

@@ -4,7 +4,7 @@ title: 'Cahyut Janthapat'
 pubDate: 2022-07-01
 description: "This is the first post of my new Astro blog."
 author: "First Step to Data Visualization"
-img: "./assets/img/Data_v.png"
+img: "/assets/img/coverContent/maxim-berg-kE8-rUKjtQU-unsplash.jpg"
 speakerimg: "./assets/img/Rectangle 17027.png"
 time: 60 mins
 image:

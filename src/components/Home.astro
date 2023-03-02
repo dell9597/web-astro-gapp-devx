@@ -81,16 +81,7 @@ const { title } = Astro.params;
       <div class="flex justify-center pb-10">
         <Speaker>
           <img slot="imgSpeaker" src="./assets/img/Rectangle 17027.png"/>
-          <label slot="nameSpeaker">
-            {
-              titles.map((title) => (
-                <div>
-                  <a class="text-white text-xs md:text-base uppercase py-2 px-3 rounded-lg hover:bg-[#4136F1] active:bg-[#4136F1] focus:outline-none focus:ring focus:bg-[#4136F1]" href={`./nameSpeaker/${title}`}>{title}</a>
-                </div> 
-              ))
-          }
-          </label> 
-          
+          <label slot="nameSpeaker">CHAYUT</label> 
           <label slot="roleSpeaker">CTO Developer</label>
         </Speaker>   
       </div>
@@ -120,7 +111,7 @@ const { title } = Astro.params;
       </div>
       <div class="flex justify-center pb-10">
         <Speaker>
-          <img slot="imgSpeaker" src="../assets/img/spk_tar.png"/>
+          <img slot="imgSpeaker" src="./assets/img/spk_tar.png"/>
           <label slot="nameSpeaker">Ratthasart</label>
           <label slot="roleSpeaker">Back-end Developer</label>
         </Speaker>   
@@ -134,10 +125,6 @@ const { title } = Astro.params;
 
 <!-- components Category -->
 <Category></Category>
-
-
-
-
 
 <!-- Start Heard the song -->
 <!-- <section class="heard bg-[#000000] w-full h-auto">

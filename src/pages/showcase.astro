@@ -15,7 +15,7 @@ const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
         They decided to find the end of the rainbow.
       </p>
       <div class="cate pt-10 mx-auto pr-4 sm:pr-0">
-        <ul class="text-center gap-y-2.5 grid grid-cols-2 items-center justify-center md:grid-cols-3 lg:grid-cols-6">   
+        <ul class="text-center gap-y-2.5 md:flex md:justify-around md:py-3 grid grid-cols-2 items-center justify-center md:grid-cols-3 lg:grid-cols-6">   
             {
                 tags.map((tag) => (
                   <div>

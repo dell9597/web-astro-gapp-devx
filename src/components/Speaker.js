@@ -40,7 +40,8 @@ export class Speaker extends LitElement {
       text-align: center;
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
-      font-size: 28px;
+      font-size: clamp(24px, 3vw, 28px);
+      margin-top: 4px;
       color: #FFFFFF;
       text-transform: uppercase;
   }

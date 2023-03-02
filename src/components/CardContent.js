@@ -56,6 +56,7 @@ export class CardContent extends LitElement {
       height: 32px;
   }
   .speaker{
+      padding-top: 8px;
       display: flex;
       align-items: center;
   }
@@ -71,7 +72,6 @@ export class CardContent extends LitElement {
       font-weight: 900;
       text-overflow: ellipsis;
       overflow: hidden;
-      white-space: nowrap;
   }
   .img-showcase:hover{
      transform: scale(1.05);

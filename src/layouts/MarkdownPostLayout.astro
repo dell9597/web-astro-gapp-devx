@@ -3,13 +3,6 @@ import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
 import BlogPost from "../components/BlogPost.astro";
 const posts = await Astro.glob("../pages/posts/*.md");
-
-// const allPosts = await Astro.glob("../pages/posts/*.md");
-// const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
-
-// const { title, url, author, img, speakerimg } = Astro.props;
-// const allPosts = await Astro.glob("../pages/posts/*.md");
-// const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
 ---
 
 <Layout pageTitle={frontmatter.title}>
@@ -18,20 +11,20 @@ const posts = await Astro.glob("../pages/posts/*.md");
       <img class="h-[350px] md:h-[450px] w-full bg-cover object-cover" src={frontmatter.image.url} alt={frontmatter.image.alt} />
     </div>
     <div class="poster relative flex flex-col justify-center">
-      <div class="max-w-6xl mx-auto px-4 flex flex-col justify-center md:flex-row pt-64 ">
+      <div class="max-w-6xl mx-auto px-1 md:px-4 flex flex-col justify-center md:flex-row pt-64 ">
         <div class="left">
           <div class="md:pt-24">
             <img class="w-[300px] h-[300px] bg-cover object-cover" src={frontmatter.img} />
           </div>
         </div>
-        <div>
-          <div class="px-4 pt-10 md:pt-72 text-gray-500">
+        <div class="relative md:w-5/6">
+          <div class="px-2 md:px-4 pt-10 md:pt-72  text-gray-500 w-full">
             <h2 class="text-3xl pb-4 text-white text-star">{frontmatter.author}</h2>
-            <p>
+            <p class="text-xs md:text-sm">
               <slot />
             </p>
           </div>
-          <div class="px-4 pt-4  text-xs md:text-sm">
+          <div class="px-2 md:px-4 pt-4 text-xs md:text-sm">
             <div class="flex items-center">
               <div class="w-[135px]">
                 <h1 class="text-white">RELEASE DATE</h1>
@@ -61,15 +54,8 @@ const posts = await Astro.glob("../pages/posts/*.md");
                 <h1 class="text-white">CATEGORY</h1>
               </div>
               <ul class="flex flex-wrap gap-2 pt-2">
-                <li class="text-white inline border rounded-md py-1 px-4">
-                  <!-- {allPosts.map((post) => <BlogPost title={post.frontmatter.title} />)} -->
+                <li class="text-white inline border rounded-md py-1 px-2">
                   <p class="text-gray-500">{`${frontmatter.tags}`}</p>
-                  <!-- {
-                    posts.map(post => (
-                      <a class="text-gray-500" href={post.url}>{post.frontmatter.tags}</a>
-                    ))
-                      
-                  } -->
                 </li>
               </ul>
             </div>

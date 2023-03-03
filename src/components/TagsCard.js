@@ -13,9 +13,25 @@ export class TagCard extends LitElement {
       max-width: 100%;
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 480px) {
     .card-tag {
-      width: 245px;
+      width: 350px;
+      padding: 20px;
+      max-width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 414px) {
+    .card-tag {
+      width: 300px;
+      padding: 20px;
+      max-width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .card-tag {
+      width: 265px;
       padding: 20px;
       max-width: 100%;
     }
@@ -35,18 +51,31 @@ export class TagCard extends LitElement {
       margin: 0 0 16px 0;
   }
   .tag-description{
-      font: normal 20px Brandon Grotesque;
+      font: normal 18px Brandon Grotesque;
       color: #FFFFFF;
       opacity: 0.5;
-      width: 274px;
       overflow: hidden;
-      height: 72px;
+      height: 65.5px;
   }
+
+  @media only screen and (max-width: 360px) {
+    .tag-topic {
+      font: normal normal bold 20px/33px Brandon Grotesque;
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .tag-description {
+      width: 100%;
+    }
+  }
+
   @media only screen and (max-width: 280px) {
     .tag-description {
       width: 240px;
     }
   }
+
   .tag-document{
       font: normal 24px Brandon Grotesque;
       color: #4136F1;

@@ -3,12 +3,14 @@ import { Speaker } from "../components/Speaker";
 import Category from "../pages/tags/Category.astro";
 import Schedule from "./Schedule.astro";
 
-const allPosts = await Astro.glob("../pages/posts/*.md");
-const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+const posts = await Astro.glob("../pages/posts/*.md");
+const titles = [...new Set(posts.map((post) => post.frontmatter.titles).flat())];
+
+const { title } = Astro.params;
 ---
 
 <section class="bg-[url('./assets/img/Hero.png')]">
-  <div class="px-[3%] lg:px-[19%] h-full w-full min-h-screen relative grid grid-cols-1 gap-1 lg:grid-cols-2 lg:gap-2 items-center">
+  <div class="px-[3%] lg:px-[19%] h-full w-full relative grid grid-cols-1 gap-1 lg:grid-cols-2 lg:gap-2 items-center">
     <div>
         <img class="w-[300px] lg:w-[500px]" src="./assets/img/logo.png" alt=""/>
         <p class="md:w-full text-white text-sm md:text-xl font-Montserrat">
@@ -79,8 +81,7 @@ const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
       <div class="flex justify-center pb-10">
         <Speaker>
           <img slot="imgSpeaker" src="./assets/img/Rectangle 17027.png"/>
-          <label slot="nameSpeaker">Chayut</label> 
-          <!-- <label slot="nameSpeaker"><a href="./nameSpeaker">Chayut</a></label>           -->
+          <label slot="nameSpeaker">CHAYUT</label> 
           <label slot="roleSpeaker">CTO Developer</label>
         </Speaker>   
       </div>
@@ -89,7 +90,7 @@ const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
         <Speaker>
           <img slot="imgSpeaker" src="./assets/img/Rectangle 170266.png"/>
           <label slot="nameSpeaker">Titikorn & Theerapat</label>
-         <label slot="roleSpeaker">Fonts-end Designer & Trainee Dev</label>
+          <label slot="roleSpeaker">Fonts-end Designer & Trainee Dev</label>
         </Speaker>   
       </div>
 
@@ -97,7 +98,7 @@ const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
         <Speaker>
           <img slot="imgSpeaker" src="./assets/img/Rectangle 17023.png"/>
           <label slot="nameSpeaker">Metee</label>
-         <label slot="roleSpeaker">Back-end Developer</label>
+          <label slot="roleSpeaker">Back-end Developer</label>
         </Speaker>   
       </div>
 
@@ -105,28 +106,25 @@ const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
         <Speaker>
           <img slot="imgSpeaker" src="./assets/img/Rectangle 17025.png"/>
           <label slot="nameSpeaker">Karnchit</label>
-         <label slot="roleSpeaker">Back-end Developer</label>
+          <label slot="roleSpeaker">Back-end Developer</label>
         </Speaker>   
       </div>
       <div class="flex justify-center pb-10">
         <Speaker>
-          <img slot="imgSpeaker" src="../assets/img/spk_tar.png"/>
+          <img slot="imgSpeaker" src="./assets/img/spk_tar.png"/>
           <label slot="nameSpeaker">Ratthasart</label>
-         <label slot="roleSpeaker">Back-end Developer</label>
+          <label slot="roleSpeaker">Back-end Developer</label>
         </Speaker>   
       </div>
     </div>
   </div>
 </section>
+
 <!-- components Schedule --> 
-<Schedule/>
+<Schedule></Schedule>
 
 <!-- components Category -->
-<Category/>
-
-
-
-
+<Category></Category>
 
 <!-- Start Heard the song -->
 <!-- <section class="heard bg-[#000000] w-full h-auto">

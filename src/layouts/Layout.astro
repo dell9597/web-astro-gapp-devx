@@ -1,5 +1,6 @@
 ---
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
 const { pageTitle } = Astro.props;
@@ -33,6 +34,7 @@ const { pageTitle } = Astro.props;
   <body class="bg-[#000000] mx-auto font-Montserrat">
     <Navbar />
     <slot />
+    <Footer/>
   </body>
 </html>
 <style is:global>

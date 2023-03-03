@@ -1,10 +1,11 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Metee Pipatjariya
+position: 'Back-End Developer'
 author: Stack Overflow Developer Survey 2022
 description: "I had some challenges, but asking in the community really helped!"
-img: "/assets/img/stack_overflow.jpeg"
-speakerimg: "/assets/img/Rectangle 17023.png"
+img: "../assets/img/stack_overflow.jpeg"
+speakerimg: "../assets/img/Rectangle 17023.png"
 time: 45 mins
 image:
   url: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*o0gZ9tb8kNfBtuzLK0-wUA.png"

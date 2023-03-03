@@ -1,11 +1,12 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Karnchit Precha'
+position: 'Back-End Developer'
 pubDate: 2023-03-09
 description: "This is the first post of my new Astro blog."
 author: "GraphQL"
-img: "/assets/img/ql.png"
-speakerimg: "/assets/img/Rectangle 17025.png"
+img: "../assets/img/ql.png"
+speakerimg: "../assets/img/Rectangle 17025.png"
 time: 45 mins
 image:
   url: "https://cdn.hackersandslackers.com/2020/11/graphql.jpg"

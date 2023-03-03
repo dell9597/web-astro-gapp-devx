@@ -1,0 +1,20 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Speaker from "../../components/Speaker.astro";
+import "../../styles/global.css";
+const pageTitle = "Speaker";
+const allPosts = await Astro.glob("../posts/*.md");
+---
+<Layout pageTitle={pageTitle}>
+  <section class="story bg-contain w-full h-auto opacity-100 bg-[url('/assets/img/Group99.png')] pt-[60px] md:pt-[120px] pb-[40px] md:pb-[70px]">
+    <div class="text-center w-full">
+      <h2 class="text-[#4136F1] text-5xl md:text-7xl font-bold lg:text-9xl pb-20 pt-10 md:pt-0 font-Audiowide">
+        SPEAKERS
+      </h2> 
+      
+      <div class="speaker lg:max-w-max max-w-none mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
+        {allPosts.map((post) => <Speaker url={post.url} title={post.frontmatter.title} img={post.frontmatter.img} speakerimg={post.frontmatter.speakerimg} position={post.frontmatter.position} author={post.frontmatter.author}/>)}        
+      </div>
+    </div>
+  </section>
+</Layout>

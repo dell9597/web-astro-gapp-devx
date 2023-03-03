@@ -65,19 +65,13 @@ const { title } = Astro.params;
 <!-- End DEV.X -->
 
 <!-- Start StoryTeller -->
-<section class="story bg-contain w-fullh-auto opacity-100 bg-[url('/assets/img/Group99.png')] ">
+<section class="story bg-contain w-full h-auto md:py-14 opacity-100 bg-[url('/assets/img/Group99.png')] ">
   <div class="text-center w-full">
     <h2 class="text-[#4136F1] text-4xl md:text-7xl font-bold lg:text-9xl pb-20 pt-10 md:pt-0 font-Audiowide">
       SPEAKERS
     </h2>
 
     <div class="speaker lg:max-w-max max-w-none mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
-      <!-- <div class="person1 px-2 pb-10">
-        <img src="/assets/img/00.png" alt="person1" class="w-[210px] h-[330px] md:w-[332px] md:h-[440px] rounded-[160px] pb-4" />
-        <h2 class="text-white font-medium text-center">AMELIA CHAMBEL</h2>
-        <p class="text-gray-500 text-center">Front End Developer</p>
-      </div> -->
-
       <div class="flex justify-center pb-10">
         <Speaker>
           <img slot="imgSpeaker" src="./assets/img/Rectangle 17027.png"/>
@@ -106,13 +100,6 @@ const { title } = Astro.params;
         <Speaker>
           <img slot="imgSpeaker" src="./assets/img/Rectangle 17025.png"/>
           <label slot="nameSpeaker">Karnchit</label>
-          <label slot="roleSpeaker">Back-end Developer</label>
-        </Speaker>   
-      </div>
-      <div class="flex justify-center pb-10">
-        <Speaker>
-          <img slot="imgSpeaker" src="./assets/img/spk_tar.png"/>
-          <label slot="nameSpeaker">Ratthasart</label>
           <label slot="roleSpeaker">Back-end Developer</label>
         </Speaker>   
       </div>

@@ -9,3 +9,21 @@ code {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
         Bitstream Vera Sans Mono, Courier New, monospace;
 }
+
+@media only screen and (max-width: 1380px) {
+    .speaker {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media only screen and (max-width: 1040px) {
+    .speaker {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .speaker {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }

@@ -1,0 +1,12 @@
+---
+import { Speaker } from "../components/Speaker";
+
+const { title, url, author, img, speakerimg, position } = Astro.props;
+---
+<div class="flex justify-center pb-10">
+    <Speaker>
+      <img slot="imgSpeaker" src={`../${speakerimg}`}/>
+      <label slot="nameSpeaker"><a href={url}>{title}</a></label> 
+      <label slot="roleSpeaker">{position}</label>
+    </Speaker>   
+</div>

@@ -4,9 +4,9 @@ title: 'Dome Jantaphat'
 position: 'CTO Developer'
 pubDate: 2022-07-01
 description: "This is the first post of my new Astro blog."
-author: "First Step to Data Visualization"
+author: "Data Viz Playground"
 img: "https://gapp-devx.s3.ap-southeast-1.amazonaws.com/assets/img/maxim-berg-kE8-rUKjtQU-unsplash.jpg"
-speakerimg: "../assets/img/Rectangle 17027.png"
+speakerimg: "../../assets/img/Rectangle 17027.png"
 time: 60 mins
 image:
   url: "https://gapp-devx.s3.ap-southeast-1.amazonaws.com/assets/img/maxim-berg-kE8-rUKjtQU-unsplash.jpg"

@@ -4,8 +4,8 @@ title: Titikorn & Theerapat
 position: 'Fonts-End Designer & Trainee Dev'
 author: jamstack innovation found
 description: "I had some challenges, but asking in the community really helped!"
-img: "../assets/img/jam.jpeg"
-speakerimg: "../assets/img/Rectangle 170266.png"
+img: "../../assets/img/jam.jpeg"
+speakerimg: "../../assets/img/Rectangle 170266.png"
 time: 45 mins
 image:
   url: "https://help.figma.com/hc/article_attachments/4764342391447/GIF_1_MOVE_2x.gif"

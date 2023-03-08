@@ -5,8 +5,8 @@ position: 'Back-End Developer'
 pubDate: 2023-03-09
 description: "This is the first post of my new Astro blog."
 author: "Dynamo Transaction"
-img: "../assets/img/DNM.png"
-speakerimg: "../assets/img/spk_tar.png"
+img: "../../assets/img/DNM.png"
+speakerimg: "../../assets/img/spk_tar.png"
 time: 45 mins
 image:
   url: "https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/DynamoDB-Cheatsheet.png"

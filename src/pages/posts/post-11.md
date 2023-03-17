@@ -1,16 +1,15 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Data Viz Playground'
+title: 'Data Viz with Drawing'
 position: 'CTO Developer'
 pubDate: 2022-07-01
 description: "This is the first post of my new Astro blog."
 author: "Dome Jantaphat"
-img: "../assets/img/Data-Viz.jpg"
+img: "../assets/img/Venngage.png"
 speakerimg: "../assets/img/Rectangle 17027.png"
 time: 60 mins
 image:
-  url: "https://gapp-devx.s3.ap-southeast-1.amazonaws.com/assets/img/maxim-berg-kE8-rUKjtQU-unsplash.jpg"
-  alt: "The Astro logo with the word One."
+  url: "https://www.whizlabs.com/blog/wp-content/uploads/2021/10/What-is-Data-Visualization.gif"
 tags: ["astro", "blogging", "learning in public"]
 build: Cahyut Janthapat
 director: Cahyut Janthapat
